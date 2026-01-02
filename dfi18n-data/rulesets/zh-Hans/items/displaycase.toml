@@ -1,4 +1,4 @@
-base = "items::hatch_cover"
+base = "items::displaycase"
 
 [[rulesets]]
 [rulesets.rules]
@@ -13,6 +13,5 @@ optional = true
 [[rulesets]]
 name = "main"
 [rulesets.rules]
-"hatch cover" = "活动盖板"
-"hatch covers" = "活动盖板"
-"floor hatch" = "楼板盖板"
+"display case" = "展示柜"
+"display cases" = "展示柜"

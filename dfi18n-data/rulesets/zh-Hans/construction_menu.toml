@@ -14,6 +14,14 @@ base = "construction_menu"
 "{cages_restraints}" = "{cages_restraints}"
 "{traps}" = "{traps}"
 "{military}" = "{military}"
+"{singular}" = "{singular}"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"Trap" = "陷阱"
+"Furnace" = "火炉"
+"Workshop" = "工坊"
 
 [[rulesets]]
 name = "main"
@@ -164,3 +172,4 @@ name = "military"
 "Armor stand" = "盔甲支架"
 "Ballista" = "弩炮"
 "Catapult" = "投石机"
+"Bolt thrower" = "弩箭投射器"
