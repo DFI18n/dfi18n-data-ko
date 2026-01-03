@@ -2,15 +2,15 @@ base = "menu::dyer"
 
 [[rulesets]]
 [rulesets.rules]
-"Dye {kind}" = "染{kind}"
-"Dye {kind} a specific color" = "将{kind}染为特定颜色"
-"Mix dye" = "混合染料"
-"Make dye" = "制作染料"
-"Make {::items::dye}" = "制作{::items::dye}"
-"Dye {kind} {::color}" = "染{kind}成{::color}"
-"Tint {kind} {::color}" = "给{::color}{kind}增色"
-"Mix {::color} dye" = "合成{::color}染料"
-"Mix {::color} dye {mix$0} {mix$1}" = "合成{::color}染料{mix$0}{mix$1}"
+"Dye {kind}" = "{kind} 염색"
+"Dye {kind} a specific color" = "특정 색으로 {kind} 염색"
+"Mix dye" = "염료 혼합"
+"Make dye" = "염료 제작"
+"Make {::items::dye}" = "{::items::dye} 제작"
+"Dye {kind} {::color}" = "{::color} {kind} 염색"
+"Tint {kind} {::color}" = "{::color} {kind} 색 더하기"
+"Mix {::color} dye" = "{::color} 염료 합성"
+"Mix {::color} dye {mix$0} {mix$1}" = "{::color} 염료 합성{mix$0}{mix$1}"
 "{tint^0} {::color} {tint$0}" = "{tint^0}{::color}{tint$0}"
 
 [[rulesets]]
@@ -18,24 +18,24 @@ name = "kind"
 [rulesets.rules]
 "{::items::thread::main}" = "{::items::thread::main}"
 "{::items::cloth::main}" = "{::items::cloth::main}"
-"leather" = "皮革"
+"leather" = "가죽"
 
 [[rulesets]]
 name = "mix$0"
 [rulesets.rules]
-"using {::color}" = "-使用{::color}"
+"using {::color}" = "-사용 {::color}"
 
 [[rulesets]]
 name = "mix$1"
 [rulesets.rules]
-"and {::color}" = "和{::color}"
+"and {::color}" = " 및 {::color}"
 
 [[rulesets]]
 name = "tint^0"
 [rulesets.rules]
-"Tint {::color} {kind}" = "将{::color}{kind}增染为"
+"Tint {::color} {kind}" = "{::color} {kind} 덧염색: "
 
 [[rulesets]]
 name = "tint$0"
 [rulesets.rules]
-"using {::items::dye}" = "-使用{::items::dye}"
+"using {::items::dye}" = "-사용 {::items::dye}"

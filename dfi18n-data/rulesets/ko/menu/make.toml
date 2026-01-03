@@ -7,22 +7,22 @@ base = "menu::make"
 [[rulesets]]
 name = "kind"
 [rulesets.rules]
-"Make" = "制作"
-"Forge" = "锻造"
-"Smelt" = "熔炼"
-"Assemble" = "组装"
+"Make" = "제작"
+"Forge" = "단조"
+"Smelt" = "제련"
+"Assemble" = "조립"
 
 [[rulesets]]
 name = "^0"
 optional = true
 [rulesets.rules]
 " {::materials::state}" = "{::materials::state}"
-" wooden" = "木制"
+" wooden" = "목제"
 
 [[rulesets]]
 name = "main"
 [rulesets.rules]
 " {::items::main}" = "{::items::main}"
-" crafts" = "工艺品"
-" ore" = "矿石"
-" ash" = "灰"
+" crafts" = "공예품"
+" ore" = "광석"
+" ash" = "재"
