@@ -7,9 +7,9 @@ base = "tasks"
 [[rulesets]]
 name = "^0"
 [rulesets.rules]
-"Assemble" = "组装"
-"Forge" = "打造"
-"Make" = "制作"
+"Assemble" = "조립"
+"Forge" = "단조"
+"Make" = "제작"
 
 [[rulesets]]
 name = "main"
