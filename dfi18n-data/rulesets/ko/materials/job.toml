@@ -2,26 +2,26 @@ base = "materials::job"
 
 [[rulesets]]
 [rulesets.rules]
-"wood" = "木头"
+"wood" = "목재"
 "{shared}" = "{shared}"
 
 [[rulesets]]
 name = "adjective"
 [rulesets.rules]
-"wooden" = "木制"
+"wooden" = "목제"
 "{shared}" = "{shared}"
 
 [[rulesets]]
 name = "shared"
 [rulesets.rules]
-"plant" = "植物"
-"cloth" = "布匹"
-"silk" = "丝绸"
-"leather" = "皮革"
-"bone" = "骨头"
-"shell" = "壳"
-"soap" = "肥皂"
-"ivory/tooth" = "长牙/牙齿"
-"horn" = "角"
-"pearl" = "珍珠"
-"yarn" = "纱线"
+"plant" = "식물"
+"cloth" = "천"
+"silk" = "비단"
+"leather" = "가죽"
+"bone" = "뼈"
+"shell" = "껍데기"
+"soap" = "비누"
+"ivory/tooth" = "상아/이빨"
+"horn" = "뿔"
+"pearl" = "진주"
+"yarn" = "실"
