@@ -1,5 +1,0 @@
-base = "creatures"
-
-[[rulesets]]
-[rulesets.rules]
-"{name}" = "{name}"

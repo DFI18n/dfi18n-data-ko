@@ -1,6 +1,0 @@
-base = "items::tool"
-
-[[rulesets]]
-[rulesets.rules]
-"tool" = "工具"
-"tools" = "工具"

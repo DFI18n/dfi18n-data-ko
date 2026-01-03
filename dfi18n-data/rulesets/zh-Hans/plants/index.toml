@@ -1,6 +1,0 @@
-base = "plants"
-
-[[rulesets]]
-[rulesets.rules]
-"{growth}" = "{growth}"
-"{name}" = "{name}"
