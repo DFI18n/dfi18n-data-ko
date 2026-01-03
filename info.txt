@@ -11,4 +11,4 @@
 [STEAM_DESCRIPTION:번역 모드용 한국어 데이터입니다. 작업이 완료되지 않았으니 구독하지 마세요!]
 [STEAM_TAG:dfhack,dfi18n]
 
-[STEAM_FILE_ID:3638676025]
+[STEAM_FILE_ID:3638678880]
