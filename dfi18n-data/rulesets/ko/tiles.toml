@@ -8,56 +8,56 @@ base = "tiles"
 name = "^0"
 optional = true
 [rulesets.rules]
-"Warm " = "温暖"
+"Warm " = "따뜻한 "
 
 [[rulesets]]
 name = "^1"
 optional = true
 [rulesets.rules]
-"Damp " = "潮湿"
+"Damp " = "습한 "
 
 [[rulesets]]
 name = "^2"
 optional = true
 [rulesets.rules]
-"Muddy " = "泥泞"
+"Muddy " = "진흙투성이의 "
 
 [[rulesets]]
 name = "^3"
 optional = true
 [rulesets.rules]
-"Snow-covered " = "雪覆"
+"Snow-covered " = "눈 덮인 "
 
 [[rulesets]]
 name = "^4"
 optional = true
 [rulesets.rules]
-"Mossy " = "生苔"
+"Mossy " = "이끼 낀 "
 
 [[rulesets]]
 name = "main"
 [rulesets.rules]
-"Murky Pool" = "泥塘"
-"Murky Pool Slope" = "泥塘斜坡"
-"Underworld Gate" = "冥界之门"
-"Driftwood" = "浮木"
-"Open Space" = "开放空间"
-"Chasm" = "裂口"
-"Eerie Glowing Pit" = "诡异发光的深坑"
-"Ashes" = "灰烬"
-"Waterfall" = "瀑布"
-"River Source" = "河源"
-"Ice" = "冰"
-"Semi-molten Rock" = "半熔的岩石"
-"Lava Flow" = "熔岩流"
-"Magma Flow" = "未凝熔岩"
-"Glowing Barrier" = "发光的屏障"
-"Glowing Floor" = "发光的地板"
-"River" = "河流"
-"Brook" = "溪流"
-"Furrowed {::materials}" = "沟壑纵横的{::materials}"
-"{::materials} Boulder" = "{::materials}巨石"
-"{::materials} Pebbles" = "{::materials}砾石地面"
+"Murky Pool" = "탁한 웅덩이"
+"Murky Pool Slope" = "탁한 웅덩이 경사면"
+"Underworld Gate" = "명계의 문"
+"Driftwood" = "유목"
+"Open Space" = "빈 공간"
+"Chasm" = "심연"
+"Eerie Glowing Pit" = "음산하게 빛나는 구덩이"
+"Ashes" = "재"
+"Waterfall" = "폭포"
+"River Source" = "강의 발원지"
+"Ice" = "얼음"
+"Semi-molten Rock" = "반쯤 녹은 암석"
+"Lava Flow" = "용암 흐름"
+"Magma Flow" = "마그마 흐름"
+"Glowing Barrier" = "빛나는 장벽"
+"Glowing Floor" = "빛나는 바닥"
+"River" = "강"
+"Brook" = "시내"
+"Furrowed {::materials}" = "고랑이 패인 {::materials}"
+"{::materials} Boulder" = "{::materials} 거석"
+"{::materials} Pebbles" = "{::materials} 자갈 바닥"
 "{plants}" = "{plants}"
 "{floors}" = "{floors}"
 "{stairways}" = "{stairways}"
@@ -69,13 +69,13 @@ name = "main"
 [[rulesets]]
 name = "plants"
 [rulesets.rules]
-"{prefix::may_dead}Tree" = "{prefix::may_dead}树"
-"{prefix::may_dead}Shrub" = "{prefix::may_dead}灌木"
-"{prefix::may_dead}Sapling" = "{prefix::may_dead}树苗"
+"{prefix::may_dead}Tree" = "{prefix::may_dead}나무"
+"{prefix::may_dead}Shrub" = "{prefix::may_dead}관목"
+"{prefix::may_dead}Sapling" = "{prefix::may_dead}묘목"
 "{prefix::may_dead}{plants::tile}" = "{prefix::may_dead}{plants::tile}"
-"{prefix::may_dead}Young {plants::tile}" = "{prefix::may_dead}幼体{plants::tile}"
-"{prefix::may_dead}{plants::tile} Sapling" = "{prefix::may_dead}{plants::tile}树苗"
-"{prefix::may_dead_dry}Grass" = "{prefix::may_dead_dry}草"
+"{prefix::may_dead}Young {plants::tile}" = "{prefix::may_dead}어린 {plants::tile}"
+"{prefix::may_dead}{plants::tile} Sapling" = "{prefix::may_dead}{plants::tile} 묘목"
+"{prefix::may_dead_dry}Grass" = "{prefix::may_dead_dry}풀"
 "{prefix::may_sparse_dense}{prefix::may_dead_dry}{plants::tile}" = "{prefix::may_sparse_dense}{prefix::may_dead_dry}{plants::tile}"
 "{::plants::growth::plural}" = "{::plants::growth::plural}"
 
@@ -84,30 +84,30 @@ name = "plants::tile"
 [rulesets.rules]
 "{::plants::name::plural}" = "{::plants::name::plural}"
 "{::plants::name::singular}" = "{::plants::name::singular}"
-"{::plants::name::singular} roots" = "{::plants::name::singular}根"
-"{::plants::name::singular} trunk" = "{::plants::name::singular}干"
-"thick {::plants::name::singular} branches" = "{::plants::name::singular}粗枝"
-"{::plants::name::singular} branches" = "{::plants::name::singular}树枝"
-"{::plants::name::singular} twigs" = "{::plants::name::singular}细枝"
-"{::plants::name::singular} cap" = "{::plants::name::singular}冠"
+"{::plants::name::singular} roots" = "{::plants::name::singular} 뿌리"
+"{::plants::name::singular} trunk" = "{::plants::name::singular} 줄기"
+"thick {::plants::name::singular} branches" = "{::plants::name::singular} 굵은 가지"
+"{::plants::name::singular} branches" = "{::plants::name::singular} 가지"
+"{::plants::name::singular} twigs" = "{::plants::name::singular} 잔가지"
+"{::plants::name::singular} cap" = "{::plants::name::singular} 갓"
 
 [[rulesets]]
 name = "floors"
 [rulesets.rules]
 "{prefix::may_smooth_detailed}{::materials}" = "{prefix::may_smooth_detailed}{::materials}"
-"{prefix::may_smooth_detailed}{::materials} Floor" = "{prefix::may_smooth_detailed}{::materials}地板"
-"Sculpted Ice Floor" = "浮刻装饰的冰地板"
-"Level Ice Floor" = "平整的冰地板"
-"{::materials} Cavern Floor" = "{::materials}洞窟地板"
-"Wet {::materials} Cavern Floor" = "湿润{::materials}洞窟地板"
-"Wet {::materials}" = "湿润{::materials}"
-"{constructed} Floor" = "{constructed}地板"
+"{prefix::may_smooth_detailed}{::materials} Floor" = "{prefix::may_smooth_detailed}{::materials} 바닥"
+"Sculpted Ice Floor" = "부조로 장식된 얼음 바닥"
+"Level Ice Floor" = "평평한 얼음 바닥"
+"{::materials} Cavern Floor" = "{::materials} 동굴 바닥"
+"Wet {::materials} Cavern Floor" = "젖은 {::materials} 동굴 바닥"
+"Wet {::materials}" = "젖은 {::materials}"
+"{constructed} Floor" = "{constructed} 바닥"
 
 [[rulesets]]
 name = "stairways"
 [rulesets.rules]
-"{prefix::updownboth} Stairway" = "{prefix::updownboth}楼梯"
-"Grassy" = "被草覆盖的"
+"{prefix::updownboth} Stairway" = "{prefix::updownboth} 계단"
+"Grassy" = "풀로 덮인"
 "{prefix::may_sparse_dense}{::plants::name::adjective}" = "{prefix::may_sparse_dense}{::plants::name::adjective}"
 "{constructed}" = "{constructed}"
 
@@ -125,16 +125,16 @@ name = "slopes::^0"
 name = "slopes::main"
 optional = true
 [rulesets.rules]
-"Glacial" = "冰川"
-"Grassy" = "被草覆盖的"
-"{prefix::may_dead_dry} Grass" = "{prefix::may_dead_dry}草壤"
+"Glacial" = "빙하"
+"Grassy" = "풀로 덮인"
+"{prefix::may_dead_dry} Grass" = "{prefix::may_dead_dry} 풀밭"
 "{prefix::may_sparse_dense}{prefix::may_dead_dry}{::plants::name::adjective}" = "{prefix::may_sparse_dense}{prefix::may_dead_dry}{::plants::name::adjective}"
 "{constructed}" = "{constructed}"
 
 [[rulesets]]
 name = "slopes::$0"
 [rulesets.rules]
-" {prefix::updown} Slope" = "{prefix::updown}斜坡"
+" {prefix::updown} Slope" = " {prefix::updown} 경사로"
 
 [[rulesets]]
 name = "walls"
@@ -145,9 +145,9 @@ name = "walls"
 name = "walls::^0"
 optional = true
 [rulesets.rules]
-"Smooth " = "光滑"
-"Rough-hewn " = "粗糙"
-"Straight " = "平滑"
+"Smooth " = "매끄러운 "
+"Rough-hewn " = "거칠게 다듬은 "
+"Straight " = "반듯한 "
 "{prefix::may_engrave} " = "{prefix::may_engrave}"
 
 [[rulesets]]
@@ -158,8 +158,8 @@ name = "walls::main"
 [[rulesets]]
 name = "walls::$0"
 [rulesets.rules]
-" Wall" = "墙体"
-" Cluster" = "矿簇"
+" Wall" = " 벽"
+" Cluster" = " 군집"
 
 [[rulesets]]
 name = "pillar_fortifications"
@@ -170,14 +170,14 @@ name = "pillar_fortifications"
 name = "pillar_fortifications::^0"
 optional = true
 [rulesets.rules]
-"Exposed " = "裸露"
+"Exposed " = "노출된 "
 "{prefix::may_engrave} " = "{prefix::may_engrave}"
 
 [[rulesets]]
 name = "pillar_fortifications::^1"
 optional = true
 [rulesets.rules]
-"{pillar_fortifications::^1::prefix}reinforced " = "{pillar_fortifications::^1::prefix}加固的"
+"{pillar_fortifications::^1::prefix}reinforced " = "{pillar_fortifications::^1::prefix}보강된 "
 
 [[rulesets]]
 name = "pillar_fortifications::^1::prefix"
@@ -193,8 +193,8 @@ name = "pillar_fortifications::main"
 [[rulesets]]
 name = "pillar_fortifications::$0"
 [rulesets.rules] 
-" Fortification" = "垛墙"
-" Pillar" = "柱子"
+" Fortification" = " 총안벽"
+" Pillar" = " 기둥"
 
 [[rulesets]]
 name = "tracks"
@@ -204,8 +204,8 @@ name = "tracks"
 [[rulesets]]
 name = "tracks::main"
 [rulesets.rules]
-"{constructed} Track" = "{constructed}轨道"
-"{prefix::may_unusable}{constructed} {prefix::updown} Track" = "{prefix::may_unusable}{constructed}{prefix::updown}轨道"
+"{constructed} Track" = "{constructed} 선로"
+"{prefix::may_unusable}{constructed} {prefix::updown} Track" = "{prefix::may_unusable}{constructed} {prefix::updown} 선로"
 
 [[rulesets]]
 name = "tracks::$0"
@@ -230,26 +230,26 @@ name = "tracks::$0"
 name = "prefix::may_dead"
 optional = true
 [rulesets.rules]
-"Dead " = "枯萎"
+"Dead " = "죽은 "
 
 [[rulesets]]
 name = "prefix::may_dead_dry"
 [rulesets.rules]
-"Dry " = "干枯"
+"Dry " = "마른 "
 "{prefix::may_dead}" = "{prefix::may_dead}"
 
 [[rulesets]]
 name = "prefix::may_sparse_dense"
 optional = true
 [rulesets.rules]
-"Sparse " = "稀疏"
-"Dense " = "茂密"
+"Sparse " = "성긴 "
+"Dense " = "무성한 "
 
 [[rulesets]]
 name = "prefix::may_smooth_detailed"
 optional = true
 [rulesets.rules]
-"Smooth " = "光滑"
+"Smooth " = "매끈한 "
 "{prefix::detailed} " = "{prefix::detailed}"
 
 [[rulesets]]
@@ -263,39 +263,39 @@ optional = true
 name = "prefix::may_unusable"
 optional = true
 [rulesets.rules]
-"Unusable " = "无效"
+"Unusable " = "사용 불가 "
 
 [[rulesets]]
 name = "prefix::detailed"
 [rulesets.rules]
-"Detailed" = "雕刻装饰的"
-"-Detailed-" = "-雕刻装饰-的"
-"+Detailed+" = "+雕刻装饰+的"
-"*Detailed*" = "*雕刻装饰*的"
-"≡Detailed≡" = "≡雕刻装饰≡的"
-"☼Detailed☼" = "☼雕刻装饰☼的"
+"Detailed" = "조각 장식된"
+"-Detailed-" = "-조각 장식-된"
+"+Detailed+" = "+조각 장식+된"
+"*Detailed*" = "*조각 장식*된"
+"≡Detailed≡" = "≡조각 장식≡된"
+"☼Detailed☼" = "☼조각 장식☼된"
 
 [[rulesets]]
 name = "prefix::sculpted"
 [rulesets.rules]
-"Sculpted" = "浮刻装饰的"
-"-Sculpted-" = "-浮刻装饰-的"
-"+Sculpted+" = "+浮刻装饰+的"
-"*Sculpted*" = "*浮刻装饰*的"
-"≡Sculpted≡" = "≡浮刻装饰≡的"
-"☼Sculpted☼" = "☼浮刻装饰☼的"
+"Sculpted" = "부조 장식된"
+"-Sculpted-" = "-부조 장식-된"
+"+Sculpted+" = "+부조 장식+된"
+"*Sculpted*" = "*부조 장식*된"
+"≡Sculpted≡" = "≡부조 장식≡된"
+"☼Sculpted☼" = "☼부조 장식☼된"
 
 [[rulesets]]
 name = "prefix::updownboth"
 [rulesets.rules]
-"Up/Down" = "上/下行"
+"Up/Down" = "상/하행"
 "{prefix::updown}" = "{prefix::updown}"
 
 [[rulesets]]
 name = "prefix::updown"
 [rulesets.rules]
-"Upward" = "上行"
-"Downward" = "下行"
+"Upward" = "상행"
+"Downward" = "하행"
 
 [[rulesets]]
 name = "constructed"
@@ -306,13 +306,13 @@ name = "constructed"
 name = "constructed::^0"
 optional = true
 [rulesets.rules]
-"rough " = "粗糙"
-"shoddy" = "劣质"
+"rough " = "거친 "
+"shoddy" = "조악한"
 
 [[rulesets]]
 name = "constructed::main"
 [rulesets.rules]
-"unknown material" = "未知物质"
+"unknown material" = "알 수 없는 재료"
 "{::materials::state::adjective}" = "{::materials::state::adjective}"
 "{::materials::^prefix}{::materials::state::adjective}" = "{::materials::^prefix}{::materials::state::adjective}"
 
@@ -320,5 +320,5 @@ name = "constructed::main"
 name = "constructed::$0"
 optional = true
 [rulesets.rules]
-" block" = "方块"
-" log" = "原木"
+" block" = " 블록"
+" log" = " 통나무"
