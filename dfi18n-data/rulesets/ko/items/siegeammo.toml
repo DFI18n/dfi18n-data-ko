@@ -1,0 +1,28 @@
+base = "items::siegeammo"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"siege ammo" = "공성 탄약"
+"{singular}" = "{singular}"
+"{plural}" = "{plural}"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"ballista arrow" = "발리스타 화살"
+
+[[rulesets]]
+name = "plural"
+[rulesets.rules]
+"ballista arrows" = "발리스타 화살"

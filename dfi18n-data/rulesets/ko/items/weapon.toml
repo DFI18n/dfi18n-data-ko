@@ -1,0 +1,107 @@
+base = "items::weapon"
+
+[[rulesets]]
+[rulesets.rules]
+"{default}" = "{default}"
+"{singular}" = "{singular}"
+"{plural}" = "{plural}"
+
+[[rulesets]]
+name = "default"
+[rulesets.rules]
+"{default::^0}{default::main}" = "{default::^0}{default::main}"
+
+[[rulesets]]
+name = "default::^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "default::main"
+[rulesets.rules]
+"weapon" = "무기"
+"weapons" = "무기"
+
+[[rulesets]]
+name = "prefix"
+[rulesets.rules]
+"large " = "대형"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"{^0}{^1}{singular::main}" = "{^0}{^1}{singular::main}"
+
+[[rulesets]]
+name = "plural"
+[rulesets.rules]
+"{^0}{^1}{plural::main}" = "{^0}{^1}{plural::main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{prefix} " = "{prefix}"
+
+[[rulesets]]
+name = "^1"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "singular::main"
+[rulesets.rules]
+"whip" = "채찍"
+"battle axe" = "전투도끼"
+"war hammer" = "전쟁망치"
+"short sword" = "단검"
+"spear" = "창"
+"mace" = "철퇴"
+"crossbow" = "석궁"
+"pick" = "곡괭이"
+"bow" = "활"
+"blowgun" = "블로우건"
+"pike" = "장창"
+"halberd" = "할버드"
+"two-handed sword" = "양손검"
+"long sword" = "장검"
+"maul" = "대형망치"
+"great axe" = "거대도끼"
+"dagger" = "비수"
+"scourge" = "다발채찍"
+"flail" = "도리깨"
+"morningstar" = "모닝스타"
+"scimitar" = "시미터"
+"training axe" = "훈련도끼"
+"training sword" = "훈련검"
+"training spear" = "훈련창"
+
+[[rulesets]]
+name = "plural::main"
+[rulesets.rules]
+"whips" = "채찍"
+"battle axes" = "전투도끼"
+"war hammers" = "전쟁망치"
+"short swords" = "단검"
+"spears" = "창"
+"maces" = "철퇴"
+"crossbows" = "석궁"
+"picks" = "곡괭이"
+"bows" = "활"
+"blowguns" = "블로우건"
+"pikes" = "장창"
+"halberds" = "할버드"
+"two-handed swords" = "양손검"
+"long swords" = "장검"
+"mauls" = "대형 망치"
+"great axes" = "대형 도끼"
+"daggers" = "단검"
+"scourges" = "다발 채찍"
+"flails" = "플레일"
+"morningstars" = "모닝스타"
+"scimitars" = "시미터"
+"training axes" = "훈련용 도끼"
+"training swords" = "훈련용 검"
+"training spears" = "훈련용 창"

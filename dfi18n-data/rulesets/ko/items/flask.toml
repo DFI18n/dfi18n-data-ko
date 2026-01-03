@@ -1,0 +1,21 @@
+base = "items::flask"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"flask" = "휴대용 병"
+"flasks" = "휴대용 병"
+"vial" = "작은 병"
+"vials" = "작은 병"
+"waterskin" = "물주머니"
+"waterskins" = "물주머니"

@@ -1,0 +1,68 @@
+base = "items::trapcomp"
+
+[[rulesets]]
+[rulesets.rules]
+"{default}" = "{default}"
+"{singular}" = "{singular}"
+"{plural}" = "{plural}"
+
+[[rulesets]]
+name = "default"
+[rulesets.rules]
+"{default::^0}{default::main}" = "{default::^0}{default::main}"
+
+[[rulesets]]
+name = "default::^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "default::main"
+[rulesets.rules]
+"trap component" = "함정 부품"
+"trap components" = "함정 부품"
+
+[[rulesets]]
+name = "^prefix"
+optional = true
+[rulesets.rules]
+"giant " = "거대"
+"enormous " = "특대"
+"spiked " = "가시"
+"large, serrated " = "대형"
+"menacing " = "험악한"
+
+[[rulesets]]
+name = "^material"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"{^prefix}{^material}{singular::main}" = "{^prefix}{^material}{singular::main}"
+
+[[rulesets]]
+name = "plural"
+[rulesets.rules]
+"{^prefix}{^material}{plural::main}" = "{^prefix}{^material}{plural::main}"
+
+[[rulesets]]
+name = "singular::main"
+[rulesets.rules]
+"axe blade" = "도끼날"
+"corkscrew" = "나사봉"
+"ball" = "공"
+"disc" = "톱날 원반"
+"spike" = "가시"
+
+[[rulesets]]
+name = "plural::main"
+[rulesets.rules]
+"axe blades" = "도끼날"
+"corkscrews" = "나사봉"
+"balls" = "공"
+"discs" = "톱날 원반"
+"spikes" = "가시"

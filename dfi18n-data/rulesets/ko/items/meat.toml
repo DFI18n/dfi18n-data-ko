@@ -1,0 +1,81 @@
+base = "items::meat"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{^1}{main}" = "{^0}{^1}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"rotten " = "썩은 "
+
+[[rulesets]]
+name = "^1"
+optional = true
+[rulesets.rules]
+"preserved " = "보존된 "
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"meat" = "고기"
+"{singular}" = "{singular}"
+"{plural}" = "{plural}"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"{^prefix}{^creature}{singular::main}" = "{^prefix}{^creature}{singular::main}"
+
+[[rulesets]]
+name = "plural"
+[rulesets.rules]
+"{^prefix}{^creature}{plural::main}" = "{^prefix}{^creature}{plural::main}"
+
+[[rulesets]]
+name = "^prefix"
+optional = true
+[rulesets.rules]
+"prepared " = "준비된 "
+"chopped " = "다진 "
+
+[[rulesets]]
+name = "^creature"
+optional = true
+[rulesets.rules]
+"{::creatures::name::singular} " = "{::creatures::name::singular}"
+
+[[rulesets]]
+name = "singular::main"
+[rulesets.rules]
+"{::materials::state}" = "{::materials::state}"
+"meat" = "고기"
+"eye" = "눈"
+"brain" = "뇌"
+"lung" = "폐"
+"heart" = "심장"
+"liver" = "간"
+"intestines" = "창자"
+"tripe" = "위"
+"gizzard" = "모래주머니"
+"sweetbread" = "흉선"
+"spleen" = "비장"
+"kidney" = "신장"
+
+[[rulesets]]
+name = "plural::main"
+[rulesets.rules]
+"{::materials::state}" = "{::materials::state}"
+"meat" = "고기"
+"eye" = "눈"
+"brain" = "뇌"
+"lung" = "폐"
+"heart" = "심장"
+"liver" = "간"
+"intestines" = "창자"
+"tripe" = "위"
+"gizzard" = "모래주머니"
+"sweetbread" = "흉선"
+"spleen" = "비장"
+"kidney" = "신장"

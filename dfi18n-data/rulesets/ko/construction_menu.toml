@@ -1,0 +1,175 @@
+base = "construction_menu"
+
+[[rulesets]]
+[rulesets.rules]
+"{main}" = "{main}"
+"{workshops}" = "{workshops}"
+"{workshops_furnaces}" = "{workshops_furnaces}"
+"{workshops_clothing}" = "{workshops_clothing}"
+"{workshops_farming}" = "{workshops_farming}"
+"{furniture}" = "{furniture}"
+"{doors_hatches}" = "{doors_hatches}"
+"{walls_floors}" = "{walls_floors}"
+"{machines_fluids}" = "{machines_fluids}"
+"{cages_restraints}" = "{cages_restraints}"
+"{traps}" = "{traps}"
+"{military}" = "{military}"
+"{singular}" = "{singular}"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"Trap" = "함정"
+"Furnace" = "용광로"
+"Workshop" = "작업장"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"Workshops" = "작업장"
+"Furniture" = "가구"
+"Doors/hatches" = "문/해치"
+"Constructions" = "구축물"
+"Machines/fluids" = "기계/유체"
+"Cages/restraints" = "우리/구속장치"
+"Traps" = "함정"
+"Military" = "군사"
+"Trade depot" = "교역소"
+
+[[rulesets]]
+name = "workshops"
+[rulesets.rules]
+"Clothing and leather" = "옷감과 가죽"
+"Farming" = "농업"
+"Furnaces" = "용광로"
+"Ashery" = "회분 작업장"
+"Bowyer" = "궁장"
+"Carpenter" = "목수"
+"Crafts" = "공예가"
+"Jeweler" = "보석세공사"
+"Magma forge" = "마그마 대장간"
+"Mechanic" = "기계공"
+"Metalsmith" = "대장간"
+"Siege" = "공성"
+"Stoneworker" = "석공"
+"Soap Maker's Workshop" = "비누 제작 작업장"
+"Screw Press" = "스크루 프레스"
+
+[[rulesets]]
+name = "workshops_furnaces"
+[rulesets.rules]
+"Glass furnace" = "유리 가마"
+"Kiln" = "가마"
+"Magma glass furnace" = "마그마 유리 가마"
+"Magma kiln" = "마그마 가마"
+"Magma smelter" = "마그마 제련로"
+"Smelter" = "제련로"
+"Wood furnace" = "목탄 가마"
+
+[[rulesets]]
+name = "workshops_clothing"
+[rulesets.rules]
+"Leather" = "가죽"
+"Loom" = "베틀"
+"Clothes" = "의복"
+"Dyer" = "염색공"
+
+[[rulesets]]
+name = "workshops_farming"
+[rulesets.rules]
+"Farm plot" = "경작지"
+"Still" = "증류기"
+"Butcher" = "도살꾼"
+"Tanner" = "무두장이"
+"Fishery" = "어장"
+"Kitchen" = "주방"
+"Farmer" = "농부"
+"Quern" = "손맷돌"
+"Vermin Catcher's Shop" = "작은동물 포획 상점"
+"Nest box" = "둥지 상자"
+"Hive" = "벌통"
+
+[[rulesets]]
+name = "furniture"
+[rulesets.rules]
+"Bed" = "침대"
+"Chair" = "의자"
+"Table" = "탁자"
+"Chest" = "상자"
+"Cabinet" = "장"
+"Burial" = "매장지"
+"Slab" = "석판"
+"Statue" = "조각상"
+"Traction bench" = "견인대"
+"Bookcase" = "책장"
+"Display" = "진열대"
+"Offering place" = "공물대"
+"Instrument" = "악기"
+
+[[rulesets]]
+name = "doors_hatches"
+[rulesets.rules]
+"Door" = "문"
+"Hatch" = "해치"
+
+[[rulesets]]
+name = "walls_floors"
+[rulesets.rules]
+"Wall" = "벽"
+"Floor" = "바닥"
+"Ramp" = "경사로"
+"Stairs" = "계단"
+"Bridge" = "다리"
+"Paved road" = "포장도로"
+"Dirt road" = "흙길"
+"Fortification" = "총안벽"
+"Wall grate" = "벽 격자"
+"Floor grate" = "바닥 격자"
+"Vertical bars" = "수직 창살"
+"Floor bars" = "바닥 창살"
+"Glass window" = "유리 창문"
+"Gem window" = "보석 창문"
+"Support" = "기둥"
+"Track" = "궤도"
+"Track stop" = "궤도 정류장"
+
+[[rulesets]]
+name = "machines_fluids"
+[rulesets.rules]
+"Lever" = "레버"
+"Well" = "우물"
+"Floodgate" = "수문"
+"Screw pump" = "스크류 펌프"
+"Water wheel" = "물레방아"
+"Windmill" = "풍차"
+"Gear assembly" = "기어 조립체"
+"Horizontal axle" = "수평 동력전달축"
+"Vertical axle" = "수직 동력전달축"
+"Millstone" = "맷돌"
+"Rollers" = "롤러"
+
+[[rulesets]]
+name = "cages_restraints"
+[rulesets.rules]
+"Rope/chain" = "밧줄/사슬"
+"Cage" = "우리"
+"Animal trap" = "동물 덫"
+
+[[rulesets]]
+name = "traps"
+[rulesets.rules]
+"Pressure plate" = "압력판"
+"Stone-fall" = "낙석"
+"Weapon" = "무기"
+"Cage" = "우리"
+"Upright weapon/spike" = "직립 무기/가시"
+
+[[rulesets]]
+name = "military"
+[rulesets.rules]
+"Archery target" = "양궁 표적"
+"Weapon rack" = "무기 거치대"
+"Armor stand" = "갑옷 거치대"
+"Ballista" = "발리스타"
+"Catapult" = "투석기"
+"Bolt thrower" = "볼트 투사기"

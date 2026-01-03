@@ -1,0 +1,20 @@
+base = "items::thread"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"web" = "거미줄"
+"webs" = "거미줄"
+"strands" = "가닥"
+"thread" = "가는 실"
+"yarn" = "실타래"

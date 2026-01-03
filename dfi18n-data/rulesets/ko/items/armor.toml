@@ -1,0 +1,95 @@
+base = "items::armor"
+
+[[rulesets]]
+[rulesets.rules]
+"{::items::prefix::maybe_equipment_size}{main}" = "{::items::prefix::maybe_equipment_size}{main}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"{default}" = "{default}"
+"{singular}" = "{singular}"
+"{plural}" = "{plural}"
+
+[[rulesets]]
+name = "default"
+[rulesets.rules]
+"{default::^0}{default::^1}{default::main}" = "{default::^0}{default::^1}{default::main}"
+
+[[rulesets]]
+name = "default::^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "default::^1"
+optional = true
+[rulesets.rules]
+"suits of " = ""
+
+[[rulesets]]
+name = "default::main"
+[rulesets.rules]
+"armor" = "갑옷"
+
+[[rulesets]]
+name = "singular"
+[rulesets.rules]
+"{^material}{^chain}{singular::main}" = "{^material}{^chain}{singular::main}"
+
+[[rulesets]]
+name = "plural"
+[rulesets.rules]
+"{plural::^0}{^material}{^chain}{plural::main}" = "{plural::^0}{^material}{^chain}{plural::main}"
+
+[[rulesets]]
+name = "plural::^0"
+optional = true
+[rulesets.rules]
+"suits of " = ""
+
+[[rulesets]]
+name = "^material"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+"leather " = "가죽"
+
+[[rulesets]]
+name = "^chain"
+optional = true
+[rulesets.rules]
+"chain " = "사슬"
+
+[[rulesets]]
+name = "singular::main"
+[rulesets.rules]
+"breastplate" = "흉갑"
+"mail shirt" = "사슬 갑옷"
+"armor" = "갑옷"
+"coat" = "외투"
+"shirt" = "셔츠"
+"cloak" = "망토"
+"tunic" = "튜닉"
+"toga" = "토가"
+"cape" = "케이프"
+"vest" = "조끼"
+"dress" = "드레스"
+"robe" = "로브"
+
+[[rulesets]]
+name = "plural::main"
+[rulesets.rules]
+"breastplates" = "흉갑"
+"mail shirts" = "사슬 갑옷"
+"armor" = "갑옷"
+"coats" = "외투"
+"shirts" = "셔츠"
+"cloaks" = "망토"
+"tunics" = "튜닉"
+"togas" = "토가"
+"capes" = "케이프"
+"vests" = "조끼"
+"dresses" = "드레스"
+"robes" = "로브"

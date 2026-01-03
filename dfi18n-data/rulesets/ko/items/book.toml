@@ -1,0 +1,6 @@
+base = "items::book"
+
+[[rulesets]]
+[rulesets.rules]
+"codex" = "필사본"
+"codices" = "필사본"

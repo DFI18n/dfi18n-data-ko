@@ -1,0 +1,41 @@
+base = "items::corpsepiece"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"rotten " = "썩은 "
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"body part" = "신체 부위"
+"body parts" = "신체 부위"
+"wooden body part" = "목제 신체 부위"
+"wooden body parts" = "목제 신체 부위"
+"plant part" = "식물 부위"
+"plant parts" = "식물 부위"
+"silk body part" = "실크 신체 부위"
+"silk body parts" = "실크 신체 부위"
+"leather body part" = "가죽 신체 부위"
+"leather body parts" = "가죽 신체 부위"
+"bone" = "뼈"
+"bones" = "뼈"
+"shell" = "껍질"
+"shells" = "껍질"
+"soap body part" = "비누 신체 부위"
+"soap body parts" = "비누 신체 부위"
+"tooth" = "이빨"
+"teeth" = "이빨"
+"horn" = "뿔"
+"horns" = "뿔"
+"pearl" = "진주"
+"pearls" = "진주"
+"yarn body part" = "실 신체 부위"
+"yarn body parts" = "실 신체 부위"
+"strand body part" = "가닥 신체 부위"
+"strand body parts" = "가닥 신체 부위"

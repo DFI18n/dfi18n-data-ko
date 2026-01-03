@@ -1,0 +1,21 @@
+base = "items::box"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"box" = "상자"
+"boxes" = "상자"
+"coffer" = "금고"
+"coffers" = "금고"
+"chest" = "궤짝"
+"chests" = "궤짝"

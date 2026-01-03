@@ -1,0 +1,22 @@
+base = "items::bar"
+
+[[rulesets]]
+[rulesets.rules]
+"bars" = "주괴"
+"{::materials}" = "{::materials}"
+"{inorganic}" = "{inorganic}"
+"{coal}" = "{coal}"
+
+[[rulesets]]
+name = "inorganic"
+[rulesets.rules]
+"metal bars" = "금속 주괴"
+"{::materials} bars" = "{::materials} 주괴"
+"{::materials} wafers" = "{::materials} 박편"
+
+[[rulesets]]
+name = "coal"
+[rulesets.rules]
+"charcoal" = "목탄"
+"coke" = "코크스"
+"refined coal" = "정제 석탄"

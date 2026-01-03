@@ -1,0 +1,6 @@
+base = "items::tool"
+
+[[rulesets]]
+[rulesets.rules]
+"tool" = "도구"
+"tools" = "도구"

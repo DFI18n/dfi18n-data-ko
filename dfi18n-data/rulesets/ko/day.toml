@@ -1,0 +1,47 @@
+base = "day"
+
+[[rulesets]]
+[rulesets.rules]
+"{%number}{number} {month}"="{%number}{number} {month}"
+"Year {%number}" = "{%number}년"
+"{^0} {season}" = "{^0}{season}"
+"{month} {%number}"="{%number}년 {month}"
+
+[[rulesets]]
+name = "number"
+[rulesets.rules]
+"st" = "일"
+"nd" = "일"
+"rd" = "일"
+"th" = "일"
+
+[[rulesets]]
+name = "season"
+[rulesets.rules]
+"spring" = "봄"
+"summer" = "여름"
+"autumn" = "가을"
+"winter" = "겨울"
+
+[[rulesets]]
+name = "^0"
+[rulesets.rules]
+"Early" = "초"
+"Mid" = "중"
+"Late" = "말"
+
+[[rulesets]]
+name = "month"
+[rulesets.rules]
+"Granite" = "화강암월"
+"Slate" = "점판암월"
+"Felsite" = "펠사이트월"
+"Hematite" = "적철석월"
+"Malachite" = "공작석월"
+"Galena" = "방연석월"
+"Limestone" = "석회암월"
+"Sandstone" = "사암월"
+"Timber" = "목재월"
+"Moonstone" = "월장석월"
+"Opal" = "오팔월"
+"Obsidian" = "흑요석월"

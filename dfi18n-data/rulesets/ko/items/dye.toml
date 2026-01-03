@@ -1,0 +1,43 @@
+base = "items::dye"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0} {prefix} {name}" = "{^0}{prefix}{name}"
+"{none} {prefix} {name}" = "{none}{prefix}{name}"
+"{::color} {name}" = "{::color}{name}"
+
+[[rulesets]]
+name = "name"
+[rulesets.rules]
+"dye" = "염료"
+
+[[rulesets]]
+name = "^0"
+[rulesets.rules]
+"{::plants::growth::singular}" = "{::plants::growth::singular}"
+"{::plants::name::singular}" = "{::plants::name::singular}"
+
+[[rulesets]]
+name = "none"
+[rulesets.rules]
+"sweet potato" = "고구마"
+"turnip" = "순무"
+"hazel" = "개암"
+"carrot" = "당근"
+"potato" = "감자"
+"radish" = "무"
+"rice husk" = "왕겨"
+
+[[rulesets]]
+name = "prefix"
+optional = true
+[rulesets.rules]
+"bark" = "나무껍질"
+"cone" = "솔방울"
+"leaf" = "잎"
+"skin" = "껍질"
+"rind" = "껍질"
+"peel" = "껍질"
+"husk" = "껍데기"
+"hull" = "껍데기"
+"shell" = "껍데기"

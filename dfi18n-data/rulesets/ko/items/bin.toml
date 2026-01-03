@@ -1,0 +1,24 @@
+base = "items::bin"
+
+[[rulesets]]
+[rulesets.rules]
+"{^0}{main}" = "{^0}{main}"
+"{::items} Bin{$0}" = "{::items}보관함{$0}"
+
+[[rulesets]]
+name = "$0"
+optional = true
+[rulesets.rules]
+" ({::materials::adjective})" = " ({::materials::adjective})"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+"{::materials::adjective} " = "{::materials::adjective}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+"bin" = "보관함"
+"bins" = "보관함"

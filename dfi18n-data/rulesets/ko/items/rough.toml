@@ -1,0 +1,9 @@
+base = "items::rough"
+
+[[rulesets]]
+[rulesets.rules]
+"rough gems" = "거친 보석"
+"raw green glass" = "거친 녹색 유리"
+"raw clear glass" = "거친 투명 유리"
+"raw crystal glass" = "거친 크리스탈 유리"
+"rough {::gems::plural}" = "거친 {::gems::plural}"
