@@ -1,0 +1,20 @@
+base = "menu::glaze"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [대상] [유약 바르기]
+# 예: 점토/석조 공예품 유약 바르기
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Glaze" = "유약 바르기"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" clay/stone craft" = "점토/석조 공예품"
+" clay/stone jug" = "점토/석조 주전자"
+" clay/stone statue" = "점토/석조 동상"
+" large clay/stone pot" = "큰 점토/석조 항아리"

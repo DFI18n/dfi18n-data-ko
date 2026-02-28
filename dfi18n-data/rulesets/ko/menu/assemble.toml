@@ -1,0 +1,16 @@
+base = "menu::assemble"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [탄약] [조립]
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Assemble" = "조립"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" {::items::siegeammo}" = "{::items::siegeammo}"

@@ -1,0 +1,8 @@
+base = "menu::craft"
+# Make 메뉴에 포함되지 않는 수공예 공방 작업
+[[rulesets]]
+[rulesets.rules]
+"rock" = "돌"
+"wood" = "목재"
+"bone" = "뼈"
+"shell" = "껍데기"

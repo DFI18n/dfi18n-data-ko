@@ -1,51 +1,61 @@
 base = "menu::kiln"
-
+# Make 메뉴에 포함되지 않는 기타 공방 작업들 (가마, 농무, 도축, 공성병기 등)
 [[rulesets]]
 [rulesets.rules]
-"Glaze clay/stone craft" = "점토/석재 공예품에 유약 바르기"
-"Glaze clay/stone jug" = "점토/석재 주전자에 유약 바르기"
-"Glaze clay/stone statue" = "점토/석재 조각상에 유약 바르기"
-"Glaze large clay/stone pot" = "점토/석재 큰 항아리에 유약 바르기"
-"Make large clay pot" = "큰 점토 항아리 만들기"
-"Make plaster powder" = "석고 가루 만들기"
-"Make large wooden gem" = "대형 목제 보석 만들기"
-"Sew leather image" = "가죽 문양 꿰매기"
-"Sew cloth image" = "천 문양 꿰매기"
-"Sew silk image" = "비단 문양 꿰매기"
-"Sew yarn image" = "실 문양 꿰매기"
-"Stud with" = "박기"
+# 가마 (Kiln) - 유약 작업
+"Glaze clay/stone craft" = "점토/돌 공예품에 유약 바르기"
+"Glaze clay/stone jug" = "점토/돌 주전자에 유약 바르기"
+"Glaze clay/stone statue" = "점토/돌 조각상에 유약 바르기"
+"Glaze large clay/stone pot" = "점토/돌 큰 단지에 유약 바르기"
+"Collect clay" = "점토 수집"
+
+# 옷 제작소 (Clothier's Shop) - 자수/장식
+"Sew leather image" = "가죽으로 그림 자수"
+"Sew cloth image" = "천으로 그림 자수"
+"Sew silk image" = "비단으로 그림 자수"
+"Sew yarn image" = "털실로 그림 자수"
+
+# 공예 공방 (Craftsdwarf's Workshop) - 장식 및 기타
+"Stud with" = "징 박기"
+"Decorate with horn" = "뿔로 장식"
+"Decorate with ivory/tooth" = "상아/이빨로 장식"
+"Decorate with pearl" = "진주로 장식"
+"Bind book" = "책 제본"
+
+# 양조장 (Still)
 "Brew drink from fruit" = "과일로 술 빚기"
 "Brew drink from plant" = "식물로 술 빚기"
-"Make soap from oil" = "식물성 기름으로 비누 만들기"
-"Make soap from tallow" = "우지로 비누 만들기"
-"Make quire" = "종이 묶음 만들기"
-"Make scroll" = "두루마리 만들기"
-"Make wax crafts" = "밀랍 공예품 만들기"
-"Bind book" = "책 제본하기"
-"Decorate with horn" = "뿔로 장식하기"
-"Decorate with ivory/tooth" = "상아/이빨로 장식하기"
-"Decorate with pearl" = "진주로 장식하기"
-"Make sheet from plant" = "식물로 종이 장 만들기"
-"Milk animal" = "동물 젖 짜기"
-"Process plant to bag" = "자루로 씨앗 털기"
+
+# 농부 공방 (Farmer's Workshop)
+"Milk animal" = "동물 우유 짜기"
+"Process plant to bag" = "식물 가공 (가방 필요)"
 "Shear animal" = "동물 털 깎기"
-"Tan a hide" = "가죽 한 장 무두질하기"
-"Press honey from honeycomb" = "벌집에서 꿀 짜내기"
-"Press liquid from fruit" = "과일에서 액체 짜내기"
-"Press liquid from paste" = "페이스트에서 액체 짜내기"
-"Press plant slurry into paper sheet" = "식물 펄프를 압착해 종이 장 만들기"
-"Slaughter {::creatures::caste::singular}" = "도축 {::creatures::caste::singular}"
-"Slaughter {::creatures::name::singular}" = "도축 {::creatures::name::singular}"
+
+# 가죽 공방 (Tanner's Shop)
+"Tan a hide" = "가죽 무두질"
+
+# 압착기 (Screw Press)
+"Press honey from honeycomb" = "벌집 압착 (꿀 생산)"
+"Press liquid from fruit" = "과일 압착 (액체 추출)"
+"Press liquid from paste" = "반죽 압착 (액체 추출)"
+"Press plant slurry into paper sheet" = "식물 펄프 압착 (종이 생산)"
+
+# 도축장 (Butcher's Shop)
+"Slaughter {::creatures::caste::singular}" = "{::creatures::caste::singular} 도축"
+"Slaughter {::creatures::name::singular}" = "{::creatures::name::singular} 도축"
+
+# 공성 병기 및 궁술 훈련 (Siege Engine / Archery Target)
 "Resting orientation" = "대기 방향"
-"Bolts loaded" = "장전된 볼트 수"
-"Bolts nearby and available: " = "근처에서 사용 가능한 볼트 수: "
-"Bolts nearby but assigned to squads: " = "근처에 있지만 부대에 할당된 볼트 수: "
-"Bolts nearby but assigned to hunters: " = "근처에 있지만 사냥꾼에게 할당된 볼트 수: "
-"Keep loaded but do not stand ready" = "장전은 유지하지만 조작자는 배치하지 않기"
-"Stand ready but do not fire" = "조작자는 배치하지만 발사하지 않기"
-"Practice fire (uses many bolts!)" = "훈련 사격 실시(볼트를 매우 많이 소모합니다!)"
-"Practice fire" = "훈련 사격 실시"
-"* Will also target enemies" = "* 적에게도 사격합니다"
-"* Place archery targets for better training" = "* 더 나은 훈련을 위해 궁술 과녁을 배치하세요"
-"Fire at enemies" = "적에게 사격하기"
-"Not in use" = "사용하지 않음"
+"Bolts loaded" = "장전된 화살"
+"Bolts nearby and available: " = "근처 사용 가능한 화살: "
+"Bolts nearby but assigned to squads: " = "근처 분대에 할당된 화살: "
+"Bolts nearby but assigned to hunters: " = "근처 사냥꾼에 할당된 화살: "
+
+"Keep loaded but do not stand ready" = "장전 유지 (사수 대기 안 함)"
+"Stand ready but do not fire" = "사수 대기 (사격 안 함)"
+"Practice fire (uses many bolts!)" = "사격 훈련 (화살 소모 심함!)"
+"Practice fire" = "사격 훈련"
+"* Will also target enemies" = "* 적도 조준함"
+"* Place archery targets for better training" = "* 훈련 효율을 위해 과녁 설치 권장"
+"Fire at enemies" = "적에게 발사"
+"Not in use" = "사용 안 함"

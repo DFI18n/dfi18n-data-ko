@@ -1,0 +1,178 @@
+base = "psychology::memory"
+
+[[rulesets]]
+[rulesets.rules]
+"{main}" = "{main}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+# 어순 변경: [사건] [기억 행동] [감정+조사] 느낌
+# 일반 공백 사용
+"{mind}{memorycolor}dwelling upon{textcolor} {things}{tail}" = "{things} {memorycolor}기억을 곱씹으며 {mind}{textcolor} 느낌{tail}"
+"{mind}{memorycolor}remembering{textcolor} {things}{tail}" = "{things} {memorycolor}기억을 떠올리며 {mind}{textcolor} 느낌{tail}"
+"{mind}{memorycolor}reliving{textcolor} {things}{tail}" = "{things} {memorycolor}기억을 생생히 되살리며 {mind}{textcolor} 느낌{tail}"
+# 날짜 표시
+"{mind::color}{season} {%number}" = "{mind::color}{%number}년 {season}"
+
+[[rulesets]]
+name = "things"
+[rulesets.rules]
+"{::psychology::event}" = "{::psychology::event}"
+
+[[rulesets]]
+name = "mind"
+[rulesets.rules]
+"{mind::color}{mind::text}" = "{mind::color}{mind::text}"
+
+[[rulesets]]
+name = "mind::color"
+optional = true
+[rulesets.rules]
+"[C:2:0:1]" = "[C:2:0:1]"
+"[C:2:0:0]" = "[C:2:0:0]"
+"[C:4:0:1]" = "[C:4:0:1]"
+"[C:4:0:0]" = "[C:4:0:0]"
+"[C:7:0:1]" = "[C:7:0:1]"
+"[C:7:0:0]" = "[C:7:0:0]"
+"[C:3:0:1]" = "[C:3:0:1]"
+"[C:3:0:0]" = "[C:3:0:0]"
+"[C:1:0:1]" = "[C:1:0:1]"
+"[C:6:0:1]" = "[C:6:0:1]"
+"[C:6:0:0]" = "[C:6:0:0]"
+"[C:5:0:1]" = "[C:5:0:1]"
+"[C:5:0:0]" = "[C:5:0:0]"
+
+[[rulesets]]
+name = "mind::text"
+[rulesets.rules]
+# 긍정적 감정 (조사 '을/를' 포함)
+"Adoration" = "흠모를"
+"Admiration" = "감탄을"
+"Affection" = "애정을"
+"Aroused" = "흥분을"
+"Caring" = "다정함을"
+"Empathy" = "공감을"
+"Enraptured" = "황홀함을"
+"Fondness" = "좋아함을"
+"Gratitude" = "감사를"
+"Lustful" = "욕정을"
+"Love" = "사랑을"
+"Passionate" = "열정을"
+"Pleasure" = "즐거움을"
+"Proud" = "자부심을"
+"Repentant" = "뉘우침을"
+"Sympathy" = "동정을"
+"Tenderness" = "애틋함을"
+"Amused" = "재미를"
+"Blissful" = "더없는 행복을"
+"Content" = "만족을"
+"Delighted" = "기쁨을"
+"Elated" = "의기양양함을"
+"Enjoyment" = "즐거움을"
+"Euphoric" = "도취감을"
+"Expectant" = "기대를"
+"Free" = "자유로움을"
+"Gaiety" = "명랑함을"
+"Happy" = "행복을"
+"Hope" = "희망을"
+"Jovial" = "쾌활함을"
+"Joy" = "환희를"
+"Relieved" = "안도를"
+"Satisfied" = "충족감을"
+"Triumph" = "승리감을"
+"Optimistic" = "낙관을"
+"Astonished" = "놀람을"
+"Awe" = "경외감을"
+"Excited" = "들뜸을"
+"Eager" = "열망을"
+"Exhilarated" = "들썩임을"
+"Interested" = "흥미를"
+"Wonder" = "경이로움을"
+"Accepting" = "수용을"
+
+# 복합/부정적 감정 (조사 '을/를' 포함)
+"Ambivalent" = "양가감정을"
+"Grim Satisfaction" = "비장한 만족을"
+"Suspicious" = "의심을"
+"Aggravated" = "심한 짜증을"
+"Agitated" = "동요를"
+"Annoyed" = "성가심을"
+"Anxious" = "불안을"
+"Bitter" = "쓰라림을"
+"Bored" = "지루함을"
+"Confused" = "혼란을"
+"Contemptuous" = "경멸을"
+"Dejected" = "낙담을"
+"Disappointed" = "실망을"
+"Disillusioned" = "환멸을"
+"Dislike" = "싫음을"
+"Embarrassed" = "창피함을"
+"Exasperated" = "격분을"
+"Frustrated" = "좌절을"
+"Gloomy" = "우울을"
+"Glum" = "침울함을"
+"Grouchy" = "심술을"
+"Guilty" = "죄책감을"
+"Indignant" = "분개를"
+"Insulted" = "모욕감을"
+"Irritated" = "짜증을"
+"Isolated" = "고립감을"
+"Lonely" = "외로움을"
+"Regretful" = "후회를"
+"Resentful" = "억울함을"
+"Restless" = "안절부절못함을"
+"Self-Pity" = "자기 연민을"
+"Uneasy" = "불안함을"
+"Worried" = "걱정을"
+"Anguish" = "비통함을"
+"Ashamed" = "부끄러움을"
+"Despair" = "절망을"
+"Disgusted" = "역겨움을"
+"Distressed" = "고통을"
+"Empty" = "공허함을"
+"Existential Crisis" = "실존적 위기를"
+"Frightened" = "겁에 질림을"
+"Grieved" = "비탄을"
+"Hopeless" = "막막함을"
+"Humiliated" = "굴욕감을"
+"Mortified" = "수치심을"
+"Panicked" = "공황을"
+"Sad" = "슬픔을"
+"Shaken" = "충격을"
+"Shocked" = "경악을"
+"Alarmed" = "놀람을"
+"Afraid" = "두려움을"
+"Angry" = "화남을"
+"Ferocity" = "흉포함을"
+"Horrified" = "소름 끼침을"
+"Loathing" = "혐오를"
+"Outraged" = "격분을"
+"Terrified" = "공포를"
+"Vengeful" = "복수심을"
+
+[[rulesets]]
+name = "textcolor"
+[rulesets.rules]
+"[C:7:0:1]" = "[C:7:0:1]"
+"[C:7:0:0]" = "[C:7:0:0]"
+
+[[rulesets]]
+name = "memorycolor"
+[rulesets.rules]
+"[C:5:0:1] " = "[C:5:0:1]"
+"[C:5:0:0] " = "[C:5:0:0]"
+
+[[rulesets]]
+name = "tail"
+optional = true
+[rulesets.rules]
+"." = "."
+
+[[rulesets]]
+name = "season"
+[rulesets.rules]
+"spring" = "봄"
+"summer" = "여름"
+"autumn" = "가을"
+"winter" = "겨울"

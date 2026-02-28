@@ -1,0 +1,18 @@
+base = "menu::forge"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [아이템] [제작]
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Forge" = "제작"
+"Forge twenty-five" = "25개 제작"
+"Forge pair of" = "한 쌍 제작"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" {::items::main}" = "{::items::main}"

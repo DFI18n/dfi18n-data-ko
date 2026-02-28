@@ -1,0 +1,101 @@
+base = "health::bodypart"
+
+[[rulesets]]
+[rulesets.rules]
+"[C:7:0:1]{bodypart}, {tissue}" = "[C:7:0:1]{bodypart}, {tissue}"
+"[C:7:0:1]{bodypart}" = "[C:7:0:1]{bodypart}"
+
+[[rulesets]]
+name = "tissue"
+[rulesets.rules]
+# 조직 (Material)
+"skin" = "피부"
+"muscle" = "근육"
+"fat" = "지방"
+"nervous tissue" = "신경 조직"
+"bone" = "뼈"
+"skull" = "두개골"
+"hair" = "털"
+
+[[rulesets]]
+name = "bodypart"
+[rulesets.rules]
+# 몸통
+"{up_down}body" = "{up_down}몸통"
+"upper spine" = "목 뼈(경추)"
+"middle spine" = "등 뼈(흉추)"
+"lower spine" = "허리 뼈(요추)"
+
+# 하반신
+"{side}hip" = "{side}엉덩이"
+"{side}upper leg" = "{side}허벅지"
+"{side}lower leg" = "{side}종아리"
+"{side}ankle" = "{side}발목"
+"{side}foot" = "{side}발"
+"{toe}toe" = "{toe}발가락"
+
+# 상반신
+"{side}shoulder" = "{side}어깨"
+"{side}upper arm" = "{side}위팔"
+"{side}elbow" = "{side}팔꿈치"
+"{side}lower arm" = "{side}아래팔"
+"{side}wrist" = "{side}손목"
+"{side}hand" = "{side}손"
+"thumb" = "엄지손가락"
+"{finger}finger" = "{finger}손가락"
+
+# 머리와 목
+"{side}eye" = "{side}눈"
+"{side}ear" = "{side}귀"
+"{side}cheek" = "{side}뺨"
+"{side}eyelid" = "{side}눈꺼풀"
+"head" = "머리"
+"{up_down}lip" = "{up_down}입술"
+"neck" = "목"
+
+# 치아
+"{up_down}front teeth" = "{up_down}앞니"
+"{up_down}{side}back teeth" = "{side}{up_down}어금니"
+
+# 독립 부위
+"throat" = "목구멍"
+"nose" = "코"
+"mouth" = "입"
+"tongue" = "혀"
+# 두개골 중복 정의 (원본 유지)
+"skull" = "두개골"
+
+[[rulesets]]
+name = "up_down"
+optional = true
+[rulesets.rules]
+# 상하 위치 (띄어쓰기 포함하여 자연스럽게 연결)
+"upper " = "위쪽 "
+"lower " = "아래쪽 "
+
+[[rulesets]]
+name = "side"
+optional = true
+[rulesets.rules]
+# 좌우 방향 (띄어쓰기 포함)
+"left " = "왼쪽 "
+"right " = "오른쪽 "
+
+# 손가락 명칭 (엄지 Thumb는 별도 정의됨)
+[[rulesets]]
+name = "finger"
+[rulesets.rules]
+"first " = "검지"
+"second " = "중지"
+"third " = "약지"
+"fourth " = "새끼"
+
+# 발가락 명칭
+[[rulesets]]
+name = "toe"
+[rulesets.rules]
+"first " = "엄지"
+"second " = "두 번째 "
+"third " = "세 번째 "
+"fourth " = "네 번째 "
+"fifth " = "새끼"

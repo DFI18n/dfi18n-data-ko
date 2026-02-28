@@ -1,0 +1,19 @@
+base = "menu::collect"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [재료] [수집]
+# 예: 점토 수집
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Collect" = "수집"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" clay" = "점토"
+" webs" = "거미줄"
+" sand" = "모래"

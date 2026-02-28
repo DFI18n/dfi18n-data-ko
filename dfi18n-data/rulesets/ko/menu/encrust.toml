@@ -1,0 +1,26 @@
+base = "menu::encrust"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [대상]에 [재료] [장식]
+# 예: 가구에 세공된 보석 장식
+"{kind}{main} with{main1}" = "{main}에 {main1} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Encrust" = "장식"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" ammo" = "탄약"
+" finished goods" = "완제품"
+" furniture" = "가구"
+
+[[rulesets]]
+name = "main1"
+[rulesets.rules]
+" cut gems" = "세공된 보석"
+" cut glass" = "세공된 유리"
+" polished stones" = "연마된 돌"
