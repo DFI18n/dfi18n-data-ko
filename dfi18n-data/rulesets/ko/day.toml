@@ -2,14 +2,19 @@ base = "day"
 
 [[rulesets]]
 [rulesets.rules]
-"{%number}{number} {month}"="{%number}{number} {month}"
+# 표기 변경: [월] [일] (예: 화강암월 1일)
+"{%number}{number} {month}"="{month} {%number}{number}"
+# 표기 변경: [년도]년 (예: 105년)
 "Year {%number}" = "{%number}년"
-"{^0} {season}" = "{^0}{season}"
+# 표기 변경: [접두사][계절] (예: 초봄)
+"{^0}{season}" = "{^0}{season}"
+# 표기 변경: [년도]년 [월] (예: 105년 화강암월)
 "{month} {%number}"="{%number}년 {month}"
 
 [[rulesets]]
 name = "number"
 [rulesets.rules]
+# 서수(st, nd 등)를 '일'로 통일
 "st" = "일"
 "nd" = "일"
 "rd" = "일"
@@ -26,16 +31,18 @@ name = "season"
 [[rulesets]]
 name = "^0"
 [rulesets.rules]
-"Early" = "초"
-"Mid" = "중"
-"Late" = "말"
+# 계절 접두사 (초봄, 중봄, 늦봄 등)
+"Early " = "초"
+"Mid-" = "한"
+"Late " = "늦"
 
 [[rulesets]]
 name = "month"
 [rulesets.rules]
+# 드워프 달력 (광물/암석 명칭 + 월)
 "Granite" = "화강암월"
 "Slate" = "점판암월"
-"Felsite" = "펠사이트월"
+"Felsite" = "규장암월"
 "Hematite" = "적철석월"
 "Malachite" = "공작석월"
 "Galena" = "방연석월"
@@ -43,5 +50,5 @@ name = "month"
 "Sandstone" = "사암월"
 "Timber" = "목재월"
 "Moonstone" = "월장석월"
-"Opal" = "오팔월"
+"Opal" = "단백석월"
 "Obsidian" = "흑요석월"

@@ -13,6 +13,6 @@ optional = true
 [[rulesets]]
 name = "main"
 [rulesets.rules]
-"{::materials} " = "{::materials}"
+"{::materials} " = "{::materials} "
 "drink" = "음료"
 "drinks" = "음료"

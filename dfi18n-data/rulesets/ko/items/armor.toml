@@ -20,7 +20,7 @@ name = "default"
 name = "default::^0"
 optional = true
 [rulesets.rules]
-"{::materials::adjective} " = "{::materials::adjective}"
+"{::materials::adjective} " = "{::materials::adjective} "
 
 [[rulesets]]
 name = "default::^1"
@@ -53,20 +53,20 @@ optional = true
 name = "^material"
 optional = true
 [rulesets.rules]
-"{::materials::adjective} " = "{::materials::adjective}"
-"leather " = "가죽"
+"{::materials::adjective} " = "{::materials::adjective} "
+"leather " = "가죽 "
 
 [[rulesets]]
 name = "^chain"
 optional = true
 [rulesets.rules]
-"chain " = "사슬"
+"chain " = "사슬 "
 
 [[rulesets]]
 name = "singular::main"
 [rulesets.rules]
 "breastplate" = "흉갑"
-"mail shirt" = "사슬 갑옷"
+"mail shirt" = "메일"
 "armor" = "갑옷"
 "coat" = "외투"
 "shirt" = "셔츠"
@@ -82,7 +82,7 @@ name = "singular::main"
 name = "plural::main"
 [rulesets.rules]
 "breastplates" = "흉갑"
-"mail shirts" = "사슬 갑옷"
+"mail shirts" = "메일"
 "armor" = "갑옷"
 "coats" = "외투"
 "shirts" = "셔츠"

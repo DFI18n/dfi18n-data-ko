@@ -8,29 +8,29 @@ base = "items::liquid_glob"
 name = "^0"
 optional = true
 [rulesets.rules]
-"rotten " = "상한 "
+"rotten " = "썩은 "
 
 [[rulesets]]
 name = "^1"
 optional = true
 [rulesets.rules]
-"filthy " = "지저분한 "
+"filthy " = "불결한 "
 "sticky " = "끈적한 "
 "vomitous " = "구역질 나는 "
 "slimy " = "점액질의 "
-"stagnant " = "고여 있는 "
+"stagnant " = "고인 "
 "dirty " = "더러운 "
 "gooey " = "질척한 "
 "purulent " = "고름이 찬 "
-"ichorous " = "고름 같은 "
-"bloody " = "피비린내 나는 "
+"ichorous " = "진물 같은 "
+"bloody " = "피투성이의 "
 
 [[rulesets]]
 name = "main"
 [rulesets.rules]
 "liquid" = "액체"
 "glob" = "덩어리"
-"{::creatures::caste::singular} paste" = "{::creatures::caste::singular}풀"
+"{::creatures::caste::singular} paste" = "{::creatures::caste::singular} 반죽"
 "{::materials}" = "{::materials}"
 
 [[rulesets]]

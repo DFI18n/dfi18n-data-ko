@@ -1,0 +1,179 @@
+base = "worldgen"
+
+[[rulesets]]
+[rulesets.rules]
+"{simplegen}" = "{simplegen}"
+"{choice}" = "{choice}"
+"{Tutorial}" = "{Tutorial}"
+"{Route}" = "{Route}"
+"{CampDistance}" = "{CampDistance}"
+
+[[rulesets]]
+name = "simplegen"
+[rulesets.rules]
+"{%number} years" = "{%number}년"
+"Population: ≈{%number}" = "인구 수: ≈{%number}"
+"Number of sites: {%number}" = "거점 수: {%number}"
+
+[[rulesets]]
+name = "choice"
+[rulesets.rules]
+"Passing a few weeks to get things ready..." = "준비를 위해 몇 주가 흐르는 중..."
+
+[[rulesets]]
+name = "Tutorial"
+[rulesets.rules]
+# 튜토리얼 채굴 퀘스트 관련
+"{%number} of 20)" = "{%number}칸 (목표: 20칸)"
+"Elevation {%number}" = "고도 {%number}"
+
+# 사운드 설정 관련
+"Music Volume (Fortress): {%number}%" = "음악 볼륨 (요새): {%number}%"
+"Average Seconds Between Tracks/Interludes (Fortress): {%number}" = "트랙 재생 간격 (요새): {%number}초"
+"Sound Effects Volume (Fortress): {%number}%" = "효과음 볼륨 (요새): {%number}%"
+"Ambience Volume (Fortress): {%number}%" = "환경음 볼륨 (요새): {%number}%"
+"Music Volume (Adventure): {%number}%" = "음악 볼륨 (모험): {%number}%"
+"Sound Effects Volume (Adventure): {%number}%" = "효과음 볼륨 (모험): {%number}%"
+"Master Volume: {%number}%" = "전체 볼륨: {%number}%"
+"Ambience Volume (Adventure): {%number}%" = "환경음 볼륨 (모험): {%number}%"
+
+# 직업 할당 관련
+"{%number} assigned" = "{%number}명 할당됨"
+
+[[rulesets]]
+name = "Route"
+[rulesets.rules]
+"Stop {%number}" = "정거장 {%number}"
+"Route {%number}" = "경로 {%number}"
+"{%number} days" = "{%number}일"
+"{%number} day" = "{%number}일"
+
+# 문장 재조립: 영어(동사-방향-시간-조건) -> 한국어(조건-시간-방향-동사)
+# 예: [지정 물품이 가득 차면] [즉시] [북쪽으로] [밀어 보냄]
+"{Route::action}{Route::side}{Route::time}{Route::kind}" = "{Route::kind}{Route::time}{Route::side}{Route::action}"
+
+"Set conditions for Stop {%number}." = "정거장 {%number}의 출발 조건 설정."
+"(Vehicle moved to next stop if any condition triggered.)" = "(조건 중 하나라도 충족되면 수레가 다음 정거장으로 이동합니다.)"
+
+[[rulesets]]
+name = "Route::side"
+[rulesets.rules]
+# 방향 (조사가 포함되어야 자연스러움)
+" north " = "북쪽으로 "
+" south " = "남쪽으로 " 
+" east " = "동쪽으로 "
+" west " = "서쪽으로 "
+
+[[rulesets]]
+name = "Route::action"
+[rulesets.rules]
+# 수레 이동 방식
+"Ride" = "타고 감"
+"Push off" = "밀어 보냄"
+"Guide" = "이끌고 감"
+
+[[rulesets]]
+name = "Route::time"
+[rulesets.rules]
+# 시간 조건
+"in {%number} days " = "{%number}일 뒤 "
+"in {%number} day " = "{%number}일 뒤 "
+"immediately " = "즉시 "
+
+[[rulesets]]
+name = "Route::kind"
+[rulesets.rules]
+# 적재 조건
+"when full of {Route::kind::item}" = "{Route::kind::item} 가득 차면 "
+"always (at least 0%)" = "무조건 (0% 이상일 때) "
+"when at least {%number}% of {Route::kind::item}" = "{Route::kind::item} {%number}% 이상이면 "
+
+[[rulesets]]
+name = "Route::kind::item"
+[rulesets.rules]
+# 물품 대상 (주격 조사 '이/가' 역할 포함)
+"desired items" = "지정 물품이"
+"any items" = "아무 물품이나"
+
+[[rulesets]]
+name = "CampDistance"
+[rulesets.rules] 
+"{Camp::list}" = "{Camp::list}"
+"{Camp::listpop}" ="{Camp::listpop}"
+"{Camp::list} {Camp::listpop}" = "{Camp::list} {Camp::listpop}"
+"Nearest site: {Camp::Distance} {Camp::Side}" = "가장 가까운 거점: {Camp::Side}으로 {Camp::Distance}"
+"Nearest site: {Camp::Distance}" = "가장 가까운 거점: {Camp::Distance}"
+
+[[rulesets]]
+name = "Camp::list"
+[rulesets.rules]
+"Elves      " = "엘프     "
+"Humans     " = "인간     "
+"Goblins    " = "고블린   "
+"Hostile," = "적대적인,"
+"War," = "전쟁,"
+"Neighbors:" = "이웃들:"
+
+[[rulesets]]
+name = "Camp::listpop"
+[rulesets.rules]
+"A hundred" = "백 명"
+"Over a hundred" = "백 명 이상"
+"A few hundred" = "몇 백 명"
+"Hundreds" = "수백 명"
+"A thousand " = "천 명"
+"Hundred thousands" = "?00,000 명"
+"{Common::Number} thousand" = "{Common::Number},000 명"
+"{Common::Number} million" = "{Common::Number},000,000 명"
+"{Common::Number} billion" = "{Common::Number},000,000,000 명"
+"a hundred" = "백 명"
+"over a hundred" = "백 명 이상"
+"a few hundred" = "몇 백 명"
+"hundreds" = "수백 명"
+"a thousand" = "천 명"
+"hundred thousands" = "?00,000 명"
+
+[[rulesets]]
+name = "Camp::Distance"
+[rulesets.rules]
+"A day's travel" = "하루 거리"
+"1/2 day's travel" = "반나절 거리"
+"{%number} days' travel" = "{%number}일 거리"
+"A short trip" = "짧은 거리"
+"A half day's travel" = "반나절 거리"
+"Nearly a day's travel" = "거의 하루 거리"
+"More than a day's travel" = "하루 이상의 거리"
+"Here" = "여기"
+
+[[rulesets]]
+name = "Camp::Side"
+[rulesets.rules]
+"east" = "동쪽"
+"west" = "서쪽"
+"south" = "남쪽"
+"north" = "북쪽"
+"NE" = "북동쪽"
+"NW" = "북서쪽"
+"SE" = "남동쪽"
+"SW" = "남서쪽"
+
+[[rulesets]]
+name = "Common::Number"
+[rulesets.rules]
+"One" = "1"
+"Two" = "2"
+"Three" = "3"
+"Four" = "4"
+"Five" = "5"
+"Ten" = "10"
+"Twenty" = "20"
+"Thirty" = "30"
+"one" = "1"
+"two" = "2"
+"three" = "3"
+"four" = "4"
+"five" = "5"
+"ten" = "10"
+"twenty" = "20"
+"thirty" = "30"
+

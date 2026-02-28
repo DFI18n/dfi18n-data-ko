@@ -1,0 +1,80 @@
+base = "health::condition"
+
+[[rulesets]]
+[rulesets.rules]
+"[C:0:0:1]- {::name}" = "[C:0:0:1]- {::name}"
+"[C:2:0:1]{time}:{treatment}" = "[C:2:0:1]{time}:{treatment}"
+# 기타/임시 룰
+"{treatment_doodoo}" = "{treatment_doodoo}"
+
+[[rulesets]]
+name = "time"
+[rulesets.rules]
+# 날짜 형식: 1050년 Granite월 15일
+"{time::day}{::day::month}, {%number}" = "{%number}년 {::day::month} {time::day}"
+
+[[rulesets]]
+name = "time::day"
+[rulesets.rules]
+# 날짜 숫자 뒤의 st, nd, rd 등을 제거하고 '일'로 통일
+"{%number}{::day::number} " = "{%number}일"
+
+[[rulesets]]
+name = "treatment"
+[rulesets.rules]
+# 기본 의료 행위
+"[C:7:0:1] Evaluated" = "[C:7:0:1] 진단받음"
+"[C:7:0:1] Brought to rest in Bed" = "[C:7:0:1] 침대로 이송되어 휴식"
+"[C:7:0:1] Received {::items::crutch}" = "[C:7:0:1] {::items::crutch} 지급받음"
+"[C:6:0:1] Had {::health::bodypart::bodypart} set" = "[C:6:0:1] {::health::bodypart::bodypart} 접골함"
+"[C:3:0:1] Cleaned" = "[C:3:0:1] 세척함"
+
+# 복합 처치 (변수 재배치: 부위 -> 에 -> 재질 -> 도구 -> 처치)
+# 붕대 (Dressing)
+"[C:7:0:1] Received {::materials::adjective}{kind}{^0}{$0}" = "[C:7:0:1] {$0}{^0} {::materials::adjective}{kind} 처치"
+# 봉합 (Sutures)
+"[C:4:0:1] Received {::materials::adjective}{kind}{^0}{$0}" = "[C:4:0:1] {$0}{^0} {::materials::adjective}{kind} 처치"
+# 부목 (Splint)
+"[C:6:0:1] Received {::materials::adjective}{kind}{^0}{$0}" = "[C:6:0:1] {$0}{^0} {::materials::adjective}{kind} 처치"
+
+# 예외적 상황/구버전 호환용 (Doodoo)
+[[rulesets]]
+name = "treatment_doodoo"
+[rulesets.rules]
+# 붕대
+"[C:7:0:1]{kind}{^0}{::health::bodypart::bodypart}" = "[C:7:0:1] {::health::bodypart::bodypart}{^0} {kind} 처치"
+# 봉합
+"[C:4:0:1]{kind}{^0}{::health::bodypart::bodypart}" = "[C:4:0:1] {::health::bodypart::bodypart}{^0} {kind} 처치"
+# 부목
+"[C:6:0:1]{kind}{^0}{::health::bodypart::bodypart}" = "[C:6:0:1] {::health::bodypart::bodypart}{^0} {kind} 처치"
+
+[[rulesets]]
+name = "kind"
+optional = true
+[rulesets.rules]
+"dressing" = "붕대"
+"sutures" = "봉합"
+" dressing" = "붕대"
+" sutures" = "봉합"
+" splint" = "부목"
+"splint" = "부목"
+
+[[rulesets]]
+name = "$0"
+optional = true
+[rulesets.rules]
+# 신체 부위 수식어 (앞 파일과 연동)
+" left" = "왼쪽"
+" right" = "오른쪽"
+" upper" = "위쪽"
+" lower" = "아래쪽"
+" {::health::bodypart::bodypart}" = "{::health::bodypart::bodypart}"
+
+[[rulesets]]
+name = "^0"
+optional = true
+[rulesets.rules]
+# 조사 '에' (위치 뒤에 붙음)
+"on" = "에"
+"on " = "에"
+" on" = "에"

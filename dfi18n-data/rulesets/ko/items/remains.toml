@@ -14,7 +14,7 @@ optional = true
 name = "^1"
 optional = true
 [rulesets.rules]
-"{::creatures::name::singular} " = "{::creatures::name::singular}"
+"{::creatures::name::singular} " = "{::creatures::name::singular} "
 
 [[rulesets]]
 name = "main"

@@ -2,16 +2,31 @@ base = "menu::dyer"
 
 [[rulesets]]
 [rulesets.rules]
+"{main}{tail}" = "{main}{tail}"
+
+[[rulesets]]
+name = "tail"
+optional = true
+[rulesets.rules]
+" (opens menu)" = " (메뉴 열기)"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
 "Dye {kind}" = "{kind} 염색"
-"Dye {kind} a specific color" = "특정 색으로 {kind} 염색"
+"Dye {kind} a specific color" = "{kind} 특정 색으로 염색"
 "Mix dye" = "염료 혼합"
 "Make dye" = "염료 제작"
 "Make {::items::dye}" = "{::items::dye} 제작"
-"Dye {kind} {::color}" = "{::color} {kind} 염색"
-"Tint {kind} {::color}" = "{::color} {kind} 색 더하기"
-"Mix {::color} dye" = "{::color} 염료 합성"
-"Mix {::color} dye {mix$0} {mix$1}" = "{::color} 염료 합성{mix$0}{mix$1}"
-"{tint^0} {::color} {tint$0}" = "{tint^0}{::color}{tint$0}"
+# 예: 실 에메랄드 염색
+"Dye {kind} {::color}" = "{kind} {::color} 염색"
+# 예: 실 에메랄드 색 입히기
+"Tint {kind} {::color}" = "{kind} {::color} 색 입히기"
+"Mix {::color} dye" = "{::color} 염료 혼합"
+# 예: 미드나잇 블루 염료 혼합 (네이비 + 블랙)
+"Mix {::color} dye {mix$0} {mix$1}" = "{::color} 염료 혼합 ({mix$0} {mix$1})"
+# 예: 빨간색 실에 파란색 덧입히기 - 파란색 염료 사용
+"{tint^0} {::color} {tint$0}" = "{tint^0} {::color} 덧입히기 {tint$0}"
 
 [[rulesets]]
 name = "kind"
@@ -23,19 +38,23 @@ name = "kind"
 [[rulesets]]
 name = "mix$0"
 [rulesets.rules]
-"using {::color}" = "-사용 {::color}"
+# 혼합 재료 1
+"using {::color}" = "{::color}"
 
 [[rulesets]]
 name = "mix$1"
 [rulesets.rules]
-"and {::color}" = " 및 {::color}"
+# 혼합 재료 2 (기호 + 사용)
+"and {::color}" = "+ {::color}"
 
 [[rulesets]]
 name = "tint^0"
 [rulesets.rules]
-"Tint {::color} {kind}" = "{::color} {kind} 덧염색: "
+# 덧입히기 대상 (이미 색이 있는 물품)
+"Tint {::color} {kind}" = "{::color} {kind}에"
 
 [[rulesets]]
 name = "tint$0"
 [rulesets.rules]
-"using {::items::dye}" = "-사용 {::items::dye}"
+# 덧입히기 재료
+"using {::items::dye}" = "- {::items::dye} 사용"
