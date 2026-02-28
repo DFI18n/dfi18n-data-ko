@@ -8,9 +8,9 @@ base = "items::sheet"
 name = "^0"
 optional = true
 [rulesets.rules]
-"{::materials::adjective} " = "{::materials::adjective}"
+"{::materials::adjective} " = "{::materials::adjective} "
 
 [[rulesets]]
 name = "main"
 [rulesets.rules]
-"sheet" = "종이류"
+"sheet" = "종이"

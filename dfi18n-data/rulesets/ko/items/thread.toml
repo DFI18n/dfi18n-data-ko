@@ -8,7 +8,7 @@ base = "items::thread"
 name = "^0"
 optional = true
 [rulesets.rules]
-"{::materials::adjective} " = "{::materials::adjective}"
+"{::materials::adjective} " = "{::materials::adjective} "
 
 [[rulesets]]
 name = "main"
@@ -16,5 +16,5 @@ name = "main"
 "web" = "거미줄"
 "webs" = "거미줄"
 "strands" = "가닥"
-"thread" = "가는 실"
-"yarn" = "실타래"
+"thread" = "실"
+"yarn" = "털실 "
