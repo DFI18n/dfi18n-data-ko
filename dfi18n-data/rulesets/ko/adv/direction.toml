@@ -1,0 +1,36 @@
+base = "adv::direction"
+
+[[rulesets]]
+[rulesets.rules]
+" ({NS}{EW}{tit}{height})" = " ({NS}{EW}{tit}{height})"
+
+[[rulesets]]
+name = "tit"
+optional = true
+[rulesets.rules]
+"/" = "/"
+
+[[rulesets]]
+name = "height"
+optional = true
+[rulesets.rules]
+"Above" = "위쪽"
+"Below" = "아래쪽"
+
+[[rulesets]]
+name = "EW"
+optional = true
+[rulesets.rules]
+"E" = "동"
+"W" = "서"
+"East" = "동쪽"
+"West" = "서쪽"
+
+[[rulesets]]
+name = "NS"
+optional = true
+[rulesets.rules]
+"N" = "북"
+"S" = "남"
+"North" = "북쪽"
+"South" = "남쪽"

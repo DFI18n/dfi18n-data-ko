@@ -1,0 +1,62 @@
+base = "rumor"
+
+[[rulesets]]
+[rulesets.rules]
+"Summarize the conflict in which {A} attacked {B}" = "{A}이(가) {B}을(를) 공격했던 분쟁 요약하기"
+" (This occurred {Time} in {GroupA})" = " ({Time} {GroupA}에서 발생함)"
+"Spread rumor of {GroupA::prefix}{GroupA}'s presence in {GroupB::prefix}{GroupB}" = "{GroupB::prefix}{GroupB}에 {GroupA::prefix}{GroupA}이(가) 나타났다는 소문 퍼뜨리기"
+
+[[rulesets]]
+name = "A"
+[rulesets.rules]
+"you" = "당신"
+"{::dwarf_language::none::prename} {::english_name::name::last}" = "{::dwarf_language::none::prename} {::english_name::name::last}"
+"a {::creatures::caste::singular}" = "{::creatures::caste::singular}"
+
+[[rulesets]]
+name = "B"
+[rulesets.rules]
+"you" = "당신"
+"{::dwarf_language::none::prename} {::english_name::name::last}" = "{::dwarf_language::none::prename} {::english_name::name::last}"
+"a {::creatures::caste::singular}" = "{::creatures::caste::singular}"
+
+[[rulesets]]
+name = "Place"
+[rulesets.rules]
+"{::english_name::name::last}" = "{::english_name::name::last}"
+
+[[rulesets]]
+name = "Site"
+[rulesets.rules]
+"{::english_name::name::place}" = "{::english_name::name::place}"
+
+[[rulesets]]
+name = "Time"
+[rulesets.rules]
+"a few days ago" = "며칠 전"
+"a week ago" = "일주일 전"
+
+[[rulesets]]
+name = "GroupA::prefix"
+optional = true
+[rulesets.rules]
+"{A}" = "{A}"
+"{::english_name::name::last} " = "{::english_name::name::last} "
+
+[[rulesets]]
+name = "GroupB::prefix"
+optional = true
+[rulesets.rules]
+"{::english_name::name::last} " = "{::english_name::name::last} "
+
+[[rulesets]]
+name = "GroupA"
+[rulesets.rules]
+"{Place}" = "{Place}"
+"{Site}" = "{Site}"
+
+[[rulesets]]
+name = "GroupB"
+[rulesets.rules]
+"{Place}" = "{Place}"
+"{Site}" = "{Site}"

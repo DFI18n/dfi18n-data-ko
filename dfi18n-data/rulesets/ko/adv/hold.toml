@@ -1,0 +1,12 @@
+base = "adv::hold"
+
+[[rulesets]]
+[rulesets.rules]
+"Hold {::tiles::walls}{direction}" = "{::tiles::walls}{direction} 잡기"
+"Release hold on {::tiles::walls}{direction}" = "{::tiles::walls}{direction} 잡기 해제"
+
+[[rulesets]]
+name = "direction"
+optional = true
+[rulesets.rules]
+"{::adv::direction}" = "{::adv::direction}"

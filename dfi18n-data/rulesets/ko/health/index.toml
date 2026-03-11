@@ -4,3 +4,4 @@ base = "health"
 [rulesets.rules]
 "{condition}" = "{condition}"
 "{bodypart}" = "{bodypart}"
+"{itemget}" = "{itemget}"
