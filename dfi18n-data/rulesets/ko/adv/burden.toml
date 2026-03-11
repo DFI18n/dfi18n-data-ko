@@ -1,0 +1,10 @@
+base = "adv::burden"
+
+[[rulesets]]
+[rulesets.rules]
+"Burden: {%number}Γ/{max}Γ" = "무게: {%number}Γ/{max}Γ"
+
+[[rulesets]]
+name = "max"
+[rulesets.rules]
+"{%number}" = "{%number}"

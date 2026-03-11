@@ -3,13 +3,15 @@ base = "menu"
 [[rulesets]]
 [rulesets.rules]
 "{main}{&0}" = "{main}{&0}"
+"{menu}{menu::tail}" = "{menu}{menu::tail}"
+"{memorial}" = "{memorial}"
+"{memorial_text}" = "{memorial_text}"
 
 [[rulesets]]
 name = "&0"
 optional = true
 [rulesets.rules]
-" (opens menu)" = " (메뉴 열기)"
-" (use bars)" = " (주괴 사용)"
+" (use bars)" = " (괴 사용)"
 " (use ore)" = " (광석 사용)"
 
 [[rulesets]]
@@ -17,5 +19,60 @@ name = "main"
 [rulesets.rules]
 "{dyer}" = "{dyer}"
 "{make}" = "{make}"
+"{forge}" = "{forge}"
 "{smelt}" = "{smelt}"
 "{kiln}" = "{kiln}"
+"{craft}" = "{craft}"
+"{assemble}" = "{assemble}"
+"{collect}" = "{collect}"
+"{weave}" = "{weave}"
+"{encrust}" = "{encrust}"
+"{glaze}" = "{glaze}"
+
+[[rulesets]]
+name = "menu::tail"
+[rulesets.rules]
+" (opens menu)" = " (메뉴 열기)"
+
+[[rulesets]]
+name = "menu"
+[rulesets.rules]
+"{::materials::state::shared::main}" = "{::materials::state::shared::main}"
+"Make instrument piece" = "악기 부품 제작"
+"Make instrument" = "악기 제작"
+"Weapons and Ammunition" = "무기 및 탄약"
+"Armor" = "갑옷"
+"Furniture" = "가구"
+"Siege equipment" = "공성 병기"
+"Trap components" = "함정 부품"
+"Other objects" = "기타 물품"
+"Metal clothing" = "금속 의복"
+"Engrave memorial slab" = "기념 석판 조각"
+"cloth" = "천"
+"yarn" = "털실"
+"wood" = "나무"
+
+[[rulesets]]
+name = "memorial"
+[rulesets.rules]
+"{::dwarf_language} (engrave memorial)" = "{::dwarf_language} (기념문 조각)"
+
+[[rulesets]]
+name = "memorial_text"
+[rulesets.rules]
+"{memorial_text::kind}, {memorial_text::slab}" = "{memorial_text::kind}, {memorial_text::slab}"
+
+[[rulesets]]
+name = "memorial_text::kind"
+[rulesets.rules]
+"Not memorialized" = "추모되지 않음"
+"Entombed" = "매장됨"
+"Memorialized" = "추모됨"
+"Entombed and memorialized" = "매장 및 추모됨"
+
+[[rulesets]]
+name = "memorial_text::slab"
+[rulesets.rules]
+"no slabs engraved" = "조각된 석판 없음"
+"{%number} slabs engraved" = "{%number}개의 석판이 조각됨"
+"slab engraved" = "석판이 조각됨"

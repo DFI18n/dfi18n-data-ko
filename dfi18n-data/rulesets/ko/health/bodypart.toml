@@ -1,0 +1,142 @@
+base = "health::bodypart"
+
+[[rulesets]]
+[rulesets.rules]
+"[C:7:0:1]{main_part}{second_part}{main_tissue}" = "[C:7:0:1]{main_part}{second_part}{main_tissue}"
+
+[[rulesets]]
+name = "main_part"
+[rulesets.rules]
+"{bodypart}" = "{bodypart}"
+
+[[rulesets]]
+name = "second_part"
+optional = true
+[rulesets.rules]
+", {bodypart}" = ", {bodypart}"
+
+[[rulesets]]
+name = "main_tissue"
+optional = true
+[rulesets.rules]
+", {tissue}" = ", {tissue}"
+
+[[rulesets]]
+name = "tissue"
+[rulesets.rules]
+"skin" = "피부"
+"muscle" = "근육"
+"fat" = "지방"
+"nervous tissue" = "신경 조직"
+"bone" = "뼈"
+"skull" = "두개골"
+"hair" = "머리카락"
+"nail" = "손발톱"
+"{organ} tissue" = "{organ} 조직"
+"pancreatic tissue" = "췌장 조직"
+"gut" = "장"
+"cartilage" = "연골"
+"throat" = "목구멍"
+"chin whisker" = "턱수염"
+
+[[rulesets]]
+name = "bodypart"
+[rulesets.rules]
+# 몸통
+"{up_down}body" = "{up_down}몸통"
+"upper spine" = "목 뼈(경추)"
+"middle spine" = "등 뼈(흉추)"
+"lower spine" = "허리 뼈(요추)"
+"{side}true ribs" = "{side}참갈비뼈"
+"{side}false ribs" = "{side}거짓갈비뼈"
+"{side}floating ribs" = "{side}뜬갈비뼈"
+
+# 下半身 - 有前后-针对动物 (하반신 - 동물 앞/뒤 포함)
+"{side}hip" = "{side}엉덩이"
+"{side}{fl}upper leg" = "{side}{fl}허벅지"
+"{side}knee" = "{side}무릎"
+"{side}{fl}lower leg" = "{side}{fl}종아리"
+"{side}{fl}leg" = "{side}{fl}다리"
+"{side}{fl}ankle" = "{side}{fl}발목"
+"{side}{fl}foot" = "{side}{fl}발"
+"{toe}toe" = "{toe}발가락"
+#上半身 (상반신)
+"{side}shoulder" = "{side}어깨"
+"{side}upper arm" = "{side}위팔"
+"{side}elbow" = "{side}팔꿈치"
+"{side}lower arm" = "{side}아래팔"
+"{side}wrist" = "{side}손목"
+"{side}hand" = "{side}손"
+"thumb" = "엄지손가락"
+"{finger}finger" = "{finger}손가락"
+#头颈 (머리와 목)
+"{side}ear" = "{side}귀"
+"{side}cheek" = "{side}뺨"
+"{side}eyelid" = "{side}눈꺼풀"
+"head" = "머리"
+"{up_down}lip" = "{up_down}입술"
+"neck" = "목"
+#牙齿 (치아)
+"{up_down}front teeth" = "{up_down}앞니"
+"{up_down}{side}back teeth" = "{side}{up_down}어금니"
+# 独立部位 (독립 부위)
+"throat" = "목구멍"
+"nose" = "코"
+"mouth" = "입"
+"tongue" = "혀"
+#奇怪,不知道,但是要用 (기타 필수 부위)
+"skull" = "두개골"
+"guts" = "내장"
+"{side}{organ}" = "{side}{organ}"
+
+[[rulesets]]
+name = "organ"
+[rulesets.rules]
+"lung" = "폐"
+"stomach" = "위"
+"heart" = "심장"
+"liver" = "간"
+"spleen" = "비장"
+"kidney" = "신장"
+"pancreas" = "췌장"
+"eye" = "눈"
+
+[[rulesets]]
+name = "up_down"
+optional = true
+[rulesets.rules]
+"upper " = "윗"
+"lower " = "아랫"
+
+[[rulesets]]
+name = "side"
+optional = true
+[rulesets.rules]
+"left " = "왼쪽 "
+"right " = "오른쪽 "
+
+[[rulesets]]
+name = "fl"
+optional = true
+[rulesets.rules]
+"front " = "앞"
+"rear" = "뒷"
+
+# 手指名称规则集 (손가락 명칭 규칙)
+[[rulesets]]
+name = "finger"
+[rulesets.rules]
+"first " = "검지"
+"second " = "중지"
+"third " = "약지"
+"fourth " = "새끼"
+
+# 脚趾名称规则集 (발가락 명칭 규칙)
+[[rulesets]]
+name = "toe"
+[rulesets.rules]
+"first " = "엄지"
+"second " = "검지"
+"third " = "중지"
+"fourth " = "약지"
+"fifth " = "새끼"

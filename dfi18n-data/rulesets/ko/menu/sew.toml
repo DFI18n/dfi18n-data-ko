@@ -1,0 +1,19 @@
+base = "menu::sew"
+
+[[rulesets]]
+[rulesets.rules]
+# 어순 변경: [재료] 형상 [수놓기]
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Sew" = "수놓기"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" leather image" = "가죽으로 그림"
+" cloth image" = "천으로 그림"
+" silk image" = "비단으로 그림"
+" yarn image" = "털실으로 그림"

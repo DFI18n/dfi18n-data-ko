@@ -1,0 +1,26 @@
+base = "adv_talk"
+
+[[rulesets]]
+[rulesets.rules]
+"{A}: Can you tell me the way to {Group}?" = "{A}: {Group}(으)로 가는 길을 알려주시겠습니까?"
+
+[[rulesets]]
+name = "A"
+[rulesets.rules]
+"You" = "당신"
+
+[[rulesets]]
+name = "Place"
+[rulesets.rules]
+"{::english_name::name::last}" = "{::english_name::name::last}"
+
+[[rulesets]]
+name = "Site"
+[rulesets.rules]
+"{::english_name::name::place}" = "{::english_name::name::place}"
+
+[[rulesets]]
+name = "Group"
+[rulesets.rules]
+"{Place}" = "{Place}"
+"{Site}" = "{Site}"

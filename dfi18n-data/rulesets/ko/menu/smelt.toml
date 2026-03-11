@@ -2,6 +2,18 @@ base = "menu::smelt"
 
 [[rulesets]]
 [rulesets.rules]
-"Make coke from bituminous coal" = "역청탄으로 코크스 만들기"
-"Make coke from lignite" = "갈탄으로 코크스 만들기"
-"Melt a metal object" = "금속 물품 하나를 녹이기"
+"Make coke from bituminous coal" = "역청탄으로 코크스 제작"
+"Make coke from lignite" = "갈탄으로 코크스 제작"
+"Melt a metal object" = "금속 물품 용해"
+# 어순 변경: [광석] [제련]
+"{kind}{main}" = "{main} {kind}"
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+"Smelt" = "제련"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+" {::materials::state::shared::main} ore" = "{::materials::state::shared::main} 광석"

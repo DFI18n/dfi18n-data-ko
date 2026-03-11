@@ -1,0 +1,126 @@
+base = "psychology::needs"
+
+[[rulesets]]
+[rulesets.rules]
+"{main}" = "{main}"
+
+[[rulesets]]
+name = "main"
+[rulesets.rules]
+# 어순: 전반적으로 [성별] [상태].
+"{textcolor}Overall,{sex}{kind}{things}{tail}" = "{textcolor}전반적으로 {sex}{things}{tail}"
+"{textcolor}{sex}{things}{tail}" = "{textcolor}{sex}{things}{tail}"
+
+[[rulesets]]
+name = "things"
+[rulesets.rules]
+" very focused with satisfied needs" = "욕구가 충족되어 매우 집중한 상태임"
+" quite focused with satisfied needs" = "욕구가 충족되어 꽤 집중한 상태임"
+" somewhat focused with satisfied needs" = "욕구가 충족되어 어느 정도 집중한 상태임"
+" badly distracted by unmet needs" = "충족되지 않은 욕구 때문에 심하게 산만함"
+" distracted by unmet needs" = "충족되지 않은 욕구 때문에 산만함"
+" unfocused by unmet needs" = "충족되지 않은 욕구 때문에 집중하지 못함"
+" untroubled by unmet needs" = "충족되지 않은 욕구에도 별로 개의치 않음"
+" is unfettered {things::after}" = "{things::after} 얽매임이 없음"
+" is level-headed {things::after}" = "{things::after} 차분함"
+" is untroubled {things::after}" = "{things::after} 평온함"
+" is not distracted {things::after}" = "{things::after} 방해받지 않음"
+" is unfocused {things::after}" = "{things::after} 집중하지 못함"
+" is distracted {things::after}" = "{things::after} 산만함"
+" is badly distracted {things::after}" = "{things::after} 심하게 산만함"
+
+[[rulesets]]
+name = "things::after"
+[rulesets.rules]
+# 긍정적 행동 (욕구 충족)
+"after spending time with people" = "사람들과 시간을 보낸 후"
+"after being away from people" = "사람들과 떨어져 지낸 후"
+"after drinking" = "술을 마신 후"
+"after being kept from alcohol" = "술을 마시지 못해"
+"after communing with" = "교감을 나눈 후"
+"after meditation" = "명상을 한 후"
+"after being unable to pray" = "기도를 하지 못해"
+"after staying occupied" = "바쁘게 지낸 후"
+"after being unoccupied" = "할 일이 없어"
+"after admiring art" = "예술품을 감상한 후"
+"after being unable to admire art" = "예술품을 감상하지 못해"
+"after doing something creative" = "창작 활동을 한 후"
+"after doing nothing creative" = "창작 활동을 하지 못해"
+"after doing something exciting" = "흥미로운 일을 한 후"
+"after leading an unexciting life" = "흥미로운 일이 없어"
+"after learning something" = "무언가를 배운 후"
+"after not learning anything" = "아무것도 배우지 못해"
+"after being with family" = "가족과 함께한 후"
+"after being away from family" = "가족과 떨어져 있어"
+"after being with friends" = "친구와 함께한 후"
+"after being away from friends" = "친구와 떨어져 있어"
+"after hearing eloquent speech" = "유창한 연설을 들은 후"
+"after being unable to hear eloquent speech" = "유창한 연설을 듣지 못해"
+"after upholding tradition" = "전통을 준수한 후"
+"after being away from traditions" = "전통을 따르지 못해"
+"after self-examination" = "자아 성찰을 한 후"
+"after a lack of introspection" = "자아 성찰을 하지 못해"
+"after making merry" = "즐겁게 논 후"
+"after being unable to make merry" = "즐겁게 놀지 못해"
+"after practicing a craft" = "공예 기술을 연습한 후"
+"after being unable to practice a craft" = "공예 기술을 연습하지 못해"
+"after practicing a martial art" = "무술을 수련한 후"
+"after being unable to practice a martial art" = "무술을 수련하지 못해"
+"after practicing a skill" = "기술을 연습한 후"
+"after being unable to practice a skill" = "기술을 연습하지 못해"
+"after taking it easy" = "느긋하게 쉰 후"
+"after being unable to take it easy" = "쉬지 못해"
+"after making romance" = "로맨틱한 시간을 보낸 후"
+"after being unable to make romance" = "로맨틱한 시간을 보내지 못해"
+"after seeing animals" = "동물을 본 후"
+"after being away from animals" = "동물을 보지 못해"
+"after seeing a great beast" = "거대 짐승을 본 후"
+"after being away from great beasts" = "거대 짐승을 보지 못해"
+"after acquiring something" = "무언가를 획득한 후"
+"after being unable to acquire something" = "무언가를 획득하지 못해"
+"after eating a good meal" = "맛있는 식사를 한 후"
+"after a lack of decent meals" = "제대로 된 식사를 하지 못해"
+"after fighting" = "싸움을 한 후"
+"after being unable to fight" = "싸움을 하지 못해"
+"after causing trouble" = "소란을 피운 후"
+"after a lack of trouble-making" = "소란을 피우지 못해"
+"after arguing" = "논쟁을 한 후"
+"after being unable to argue" = "논쟁을 하지 못해"
+"after being extravagant" = "사치를 부린 후"
+"after being unable to be extravagant" = "사치를 부리지 못해"
+"after wandering" = "거리를 배회한 후"
+"after being unable to wander" = "배회하지 못해"
+"after helping somebody" = "누군가를 도운 후"
+"after being unable to help anybody" = "아무도 돕지 못해"
+"after thinking abstractly" = "추상적인 사고를 한 후"
+"after a lack of abstract thinking" = "추상적인 사고를 하지 못해"
+
+[[rulesets]]
+name = "sex"
+[rulesets.rules]
+" he" = "그는 "
+" she" = "그녀는 "
+"He" = "그는 "
+"She" = "그녀는 "
+
+[[rulesets]]
+name = "kind"
+[rulesets.rules]
+# 한국어에서는 형용사/동사가 문장 끝에 오므로 'is'는 번역하지 않고 생략합니다.
+" is" = ""
+
+[[rulesets]]
+name = "textcolor"
+[rulesets.rules]
+"[C:7:0:1]" = "[C:7:0:1]"
+"[C:7:0:0]" = "[C:7:0:0]"
+"[C:2:0:1]" = "[C:2:0:1]"
+"[C:2:0:0]" = "[C:2:0:0]"
+"[C:6:0:1]" = "[C:6:0:1]"
+"[C:6:0:0]" = "[C:6:0:0]"
+
+[[rulesets]]
+name = "tail"
+optional = true
+[rulesets.rules]
+"." = "."

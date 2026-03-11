@@ -2,27 +2,34 @@ base = "menu::make"
 
 [[rulesets]]
 [rulesets.rules]
-"{kind}{^0}{main}" = "{kind}{^0}{main}"
+# 어순 변경: [물품] [제작]
+"{kind}{main}" = "{main} {kind}"
+"Make potash from ash" = "재로 칼륨 제작"
+"Make potash from lye" = "양잿물로 칼륨 제작"
+"Make soap from oil" = "기름으로 비누 제작"
+"Make soap from tallow" = "우지로 비누 제작"
+"Make large clay pot" = "큰 점토 단지 제작"
+"Make plaster powder" = "석고 가루 제작"
+"Make large wooden gem" = "큰 나무 보석 제작"
+"Make quire" = "종이 묶음 제작"
+"Make scroll" = "두루마리 제작"
+"Make wax crafts" = "밀랍 공예품 제작"
+"Make sheet from plant" = "식물로 종이 제작"
 
 [[rulesets]]
 name = "kind"
 [rulesets.rules]
 "Make" = "제작"
-"Forge" = "단조"
-"Smelt" = "제련"
-"Assemble" = "조립"
-
-[[rulesets]]
-name = "^0"
-optional = true
-[rulesets.rules]
-" {::materials::state}" = "{::materials::state}"
-" wooden" = "목제"
+"Make three" = "3개 제작"
+"Make five" = "5개 제작"
+"Make twenty-five" = "25개 제작"
+"Make pair of" = "한 쌍 제작"
 
 [[rulesets]]
 name = "main"
 [rulesets.rules]
 " {::items::main}" = "{::items::main}"
-" crafts" = "공예품"
-" ore" = "광석"
+" {::materials::adjective} crafts" = "{::materials::adjective} 공예품"
 " ash" = "재"
+" instrument piece" = "악기 부품"
+" instrument" = "악기"

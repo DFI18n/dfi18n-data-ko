@@ -9,8 +9,8 @@ base = "materials"
 name = "^prefix"
 optional = true
 [rulesets.rules]
-"{::plants::name::singular} " = "{::plants::name::singular}"
-"{::creatures::name::singular} " = "{::creatures::name::singular}"
+"{::plants::name::singular} " = "{::plants::name::singular} "
+"{::creatures::name::singular} " = "{::creatures::name::singular} "
 
 [[rulesets]]
 name = "adjective"
